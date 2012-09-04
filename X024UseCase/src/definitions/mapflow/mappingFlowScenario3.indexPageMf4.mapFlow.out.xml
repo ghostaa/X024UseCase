@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappingFlowScenario3.indexPageMf4.mapFlow.out.mft.xml>
+	<fmtDef id="mappingFlowScenario3.indexPageMf4.mapFlow.out">
+		<mapperConverterExpression>
+			<mapIf expression="userAmount &gt; 600" id="condition-1">
+				<map from="sampleUserList.*.samplefirstName" to="commonUserList.*.commonfirstName" append="false"/>
+				<map from="sampleUserList.*.X024MF4IndexflowData" to="commonUserList.*.X024MF4IndexflowData" append="ignore"/>
+			</mapIf>
+			<mapElse>
+			</mapElse>
+		</mapperConverterExpression>
+	</fmtDef>
+</mappingFlowScenario3.indexPageMf4.mapFlow.out.mft.xml>
