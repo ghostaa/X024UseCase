@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappingFlowScenario3>
+
+	<import file="mapflow\mappingFlowScenario3.indexPageMf4.mapFlow.out.xml"/>
+
+	<htmlProcessor context="mappingFlowScenario3Ctx" id="mappingFlowScenario3">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="Mf4opOp"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="Mf4opOp" id="Mf4opOp" type="operation">
+			<transitions>
+				<htmlTransition id="Mf4opOp.create" outputMapFmt="Mf4opOp.create_OutputFmt" targetState="indexPageMf4"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="indexmfScenario3.jsp" id="indexPageMf4">
+			<transitions>
+				<htmlTransition id="indexPageMf4.mapFlow" outputMapFmt="mappingFlowScenario3.indexPageMf4.mapFlow.out" targetState="Mf4MapShow"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="scenario3Show.jsp" id="Mf4MapShow">
+			<transitions>
+				<htmlTransition id="Mf4MapShow.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+	</htmlProcessor>
+
+	<context id="mappingFlowScenario3Ctx" type="op">
+		<refKColl refId="mappingFlowScenario3Record"/>
+	</context>
+
+	<kColl id="mappingFlowScenario3Record" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="Number"/>
+				<data id="X024MF4IndexflowData" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+				<data id="X024MF4IndexflowData" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<data id="userAmount" refType="Number"/>
+	</kColl>
+
+	<fmtDef id="Mf4opOp.create_OutputFmt">
+		<mapperConverterExpression>
+			<map from="sampleUserList.*.Mf4opIndex" to="sampleUserList.*.X024MF4IndexflowData" append="false"/>
+			<map from="sampleUserList.*.samplefirstName" to="sampleUserList.*.samplefirstName" append="ignore"/>
+			<map from="userAmount" to="userAmount"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</mappingFlowScenario3>
