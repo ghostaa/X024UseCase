@@ -4,10 +4,10 @@
 	<operation id="Mf4opOp" context="Mf4opCtx" implClass="com.ibm.btt.usecase.op.Mf4op"/>
 
 	<context id="Mf4opCtx" type="op">
-		<refKColl refId="X024MF4opRecord"/>
+		<refKColl refId="scenario1OpRecord"/>
 	</context>
 
-	<kColl id="X024MF4opRecord" dynamic="true">
+	<kColl id="scenario1OpRecord" dynamic="true">
 		<iColl id="sampleUserList">
 			<kColl id="sampleUser">
 				<data id="samplefirstName" refType="String"/>
@@ -15,12 +15,14 @@
 				<data id="Mf4opIndex" refType="Integer"/>
 			</kColl>
 		</iColl>
-		<iColl id="commonUserList" size="10">
+		<iColl id="commonUserList">
 			<kColl id="sampleUser">
 				<data id="commonfirstName" refType="String"/>
 				<data id="commonlastName" refType="String"/>
+				<data id="Mf4opIndex" refType="Integer"/>
 			</kColl>
 		</iColl>
+		<data id="userAmount" refType="Number"/>
 	</kColl>
 
 </Mf4opOp>
