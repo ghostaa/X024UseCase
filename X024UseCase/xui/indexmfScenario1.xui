@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="3,-12,437,207" dataBinding="{'ctxType':'proc','ctxFile':'mappingFlowScenario1','ctxName':'mappingFlowScenario1Ctx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="210" verticalAlignment="1" widthHint="437"/>
+    <container name="Form" id="form">
+      <gridData heightHint="158" verticalAlignment="1" widthHint="429"/>
+      <widget name="Table" dataNameForList="sampleUserList" id="table">
+        <gridData/>
+        <column widget="" dataName="X024MF4IndexflowData" width="200" text="Index">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column widget="" dataName="samplefirstName" width="200" text="samplefirstName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+      </widget>
+      <widget name="Button" action="flowEvent=mapFlow" id="button" text="mapFlowButton">
+        <gridData/>
+      </widget>
+      <widget name="Label" dataName="{'ctxType':'proc','ctxFile':'mappingFlowScenario1','ctxName':'mappingFlowScenario1Ctx','dataName':'userAmount'}" id="label" text="Label">
+        <gridData/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

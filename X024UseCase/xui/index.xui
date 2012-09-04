@@ -1,65 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="75,123,521,652" dataBinding="{'ctxType':'proc','ctxFile':'sampleFlow','ctxName':'sampleFlowCtx'}" isRuleDirty="false">
+<?xml version="1.0" encoding="Cp1252"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="75,123,521,658" dataBinding="{'ctxType':'proc','ctxFile':'sampleFlow','ctxName':'sampleFlowCtx'}" isRuleDirty="false">
   <styles/>
   <container name="Panel">
-    <gridData heightHint="652" verticalAlignment="1" widthHint="521"/>
+    <gridData heightHint="658" verticalAlignment="1" widthHint="521"/>
     <container name="Form" id="form">
       <gridData heightHint="534" verticalAlignment="1" widthHint="513" autoSize="false"/>
       <widget name="Label" id="label" text="%nls.bttsample/Welcome_To_Btt_Sample">
         <gridData/>
       </widget>
-      <widget name="Link" id="link12" text="Link to MF2" action="flowId=X024MF2TheMappingFlowEditorCreatingamappingflowFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024MF2TheMappingFlowEditorCreatingamappingflowFlow;flowEvent=start" id="link12" text="Link to MF2">
         <gridData/>
       </widget>
-      <widget name="Link" id="link13" text="Link to MF4" action="flowId=X024MF4UsingaMappingFlowinaFlowFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024MF4UsingaMappingFlowinaFlowFlow;flowEvent=start" id="link13" text="Link to MF4">
         <gridData/>
       </widget>
-      <widget name="Link" id="link" text="Link  to  CM1" action="flowId=X024CM1ConditionaMappingIFELSEIFELSE;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM1ConditionaMappingIFELSEIFELSE;flowEvent=start" id="link" text="Link  to  CM1">
         <gridData/>
       </widget>
-      <widget name="Link" id="link01" text="Link to  CM2" action="flowId=X024CM2ConditionalMappingIFBLOCKFlowFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM2ConditionalMappingIFBLOCKFlowFlow;flowEvent=start" id="link01" text="Link to  CM2">
         <gridData/>
       </widget>
-      <widget name="Link" id="link08" text="Link to CM2_2" action="flowId=X024CM2_2ConditionalMappingIFBLOCKFlowFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM2_2ConditionalMappingIFBLOCKFlowFlow;flowEvent=start" id="link08" text="Link to CM2_2">
         <gridData/>
       </widget>
-      <widget name="Link" id="link02" text="Link  to  CM3" action="flowId=X024CM3ConditionalMappingIFBLOCKELSEFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM3ConditionalMappingIFBLOCKELSEFlow;flowEvent=start" id="link02" text="Link  to  CM3">
         <gridData/>
       </widget>
-      <widget name="Link" id="link09" text="Link to CM3_2" action="flowId=X024CM3_2ConditionalMappingIFBLOCKELSEFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM3_2ConditionalMappingIFBLOCKELSEFlow;flowEvent=start" id="link09" text="Link to CM3_2">
         <gridData/>
       </widget>
-      <widget name="Link" id="link03" text="Link  to  CM5_1" action="flowId=X024CM5_1ConditionalMappingfoiCollsFlowFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM5_1ConditionalMappingfoiCollsFlowFlow;flowEvent=start" id="link03" text="Link  to  CM5_1">
         <gridData/>
       </widget>
-      <widget name="Link" id="link04" text="Link  to  CM5_2" action="flowId=X024CM5_2ConditionalMappingfoiCollsFlowFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM5_2ConditionalMappingfoiCollsFlowFlow;flowEvent=start" id="link04" text="Link  to  CM5_2">
         <gridData/>
       </widget>
-      <widget name="Link" id="link06" text="Link  to  CM6" action="flowId=X024CM6SameinstanceinbothsourceandtargetofmappingFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM6SameinstanceinbothsourceandtargetofmappingFlow;flowEvent=start" id="link06" text="Link  to  CM6">
         <gridData/>
       </widget>
-      <widget name="Link" id="link10" text="Link to CM6_2" action="flowId=X024CM6_2SameinstanceinbothsourceandtargetofmappingFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM6_2SameinstanceinbothsourceandtargetofmappingFlow;flowEvent=start" id="link10" text="Link to CM6_2">
         <gridData/>
       </widget>
-      <widget name="Link" id="link11" text="Link to CM6_3" action="flowId=X024CM6_3SameinstanceinbothsourceandtargetofmappingFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024CM6_3SameinstanceinbothsourceandtargetofmappingFlow;flowEvent=start" id="link11" text="Link to CM6_3">
         <gridData/>
       </widget>
-      <widget name="Link" id="link07" text="Link to GM1" action="flowId=X024GM1MappingReuseinMappingEditorFlow;flowEvent=start">
+      <widget name="Link" action="flowId=X024GM1MappingReuseinMappingEditorFlow;flowEvent=start" id="link07" text="Link to GM1">
         <gridData/>
       </widget>
-      <widget name="Link" id="link05" text="Link to simulateScene" action="flowId=simulateSceneFlow;flowEvent=start">
+      <widget name="Link" action="flowId=simulateSceneFlow;flowEvent=start" id="link05" text="Link to simulateScene">
         <gridData/>
       </widget>
-      <widget name="PlaceHolder">
-        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      <widget name="Link" action="flowId=mappingFlowScenario1;flowEvent=start" id="link14" text="mappingFlowScenario1">
+        <gridData/>
       </widget>
       <gridLayout numColumns="1"/>
     </container>
-    <widget name="PlaceHolder">
-      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    <widget name="Link" action="flowId=mappingFlowScenario2;flowEvent=start" id="link15" text="mappingFlowScenario2">
+      <gridData/>
     </widget>
-    <widget name="PlaceHolder">
-      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    <widget name="Link" action="flowId=mappingFlowScenario3;flowEvent=start" id="link16" text="mappingFlowScenario3">
+      <gridData/>
     </widget>
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
