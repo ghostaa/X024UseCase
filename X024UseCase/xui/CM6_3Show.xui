@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="121,39,538,434" dataBinding="{'ctxType':'proc','ctxFile':'X024CM6_3SameinstanceinbothsourceandtargetofmappingFlow','ctxName':'X024CM6_3SameinstanceinbothsourceandtargetofmappingCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Form" id="form">
+    <gridData heightHint="278" verticalAlignment="1" widthHint="1278"/>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Label" id="label" text="VipList">
+      <gridData/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Table" id="table" dataNameForList="VipList">
+      <gridData/>
+      <column text="accountBalance" width="80" widget="" dataName="accountBalance">
+        <tableColumnAlignment>16384</tableColumnAlignment>
+      </column>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Image" id="image" location="img/cm63log.png">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="2"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

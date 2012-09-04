@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CM5_2Op>
+
+	<operation id="CM5_2Op" context="CM5_2Ctx" implClass="com.ibm.btt.usecase.op.CM5_2"/>
+
+	<context id="CM5_2Ctx" type="op">
+		<refKColl refId="CM5_2Record"/>
+	</context>
+
+	<kColl id="CM5_2Record">
+		<iColl id="acountList">
+			<kColl id="CM5Record01">
+				<data id="firstLastName" refType="String"/>
+				<data id="secondLastName" refType="String"/>
+				<data id="accountAge" refType="Integer"/>
+				<data id="accountBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+</CM5_2Op>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024CM2_2ConditionalMappingIFBLOCKFlowFlow>
+
+
+	<htmlProcessor context="X024CM2_2ConditionalMappingIFBLOCKFlowCtx" id="X024CM2_2ConditionalMappingIFBLOCKFlowFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="CM2opOp"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="finalPage" type="final" finalPage="finalPage.jsp"/>
+
+		<htmlState type="page" typeIdInfo="indexPageCM22.jsp" id="cm22">
+			<transitions>
+				<htmlTransition id="cm22.show" inputMapFmt="cm2.event0_InputFmt" targetState="CM22Show"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="CM2_2Show.jsp" id="CM22Show">
+			<transitions>
+				<htmlTransition id="CM22Show.end" targetState="finalPage"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="CM2opOp" id="CM2opOp" type="operation">
+			<transitions>
+				<htmlTransition id="CM2opOp.createData" outputMapFmt="CM2opOp.createData_OutputFmt" targetState="cm22"/>
+			</transitions>
+		</operationState>
+	</htmlProcessor>
+
+	<context id="X024CM2_2ConditionalMappingIFBLOCKFlowCtx" type="op">
+		<refKColl refId="X024CM2_2ConditionalMappingIFBLOCKFlowRecord"/>
+	</context>
+
+	<kColl id="X024CM2_2ConditionalMappingIFBLOCKFlowRecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="String"/>
+				<data id="sampleBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+				<data id="commonBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+		<iColl id="topUserList">
+			<kColl id="topUser">
+				<data id="topfirstName" refType="String"/>
+				<data id="toplastName" refType="String"/>
+				<data id="topBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="cm2.event0_InputFmt">
+		<mapperConverterExpression>
+			<mapIf expression="commonUserList$*$commonfirstName != &apos;&apos;">
+				<map from="commonUserList.*.commonfirstName" to="sampleUserList.*.samplefirstName" append="false"/>
+				<map from="commonUserList.*.commonBirthDate" to="sampleUserList.*.sampleBirthDate" append="ignore"/>
+			</mapIf>
+			<mapElseIf expression="topUserList$*$topfirstName != &apos;&apos;">
+				<map from="topUserList.*.topfirstName" to="sampleUserList.*.samplefirstName" append="false"/>
+				<map from="topUserList.*.topBirthDate" to="sampleUserList.*.sampleBirthDate" append="ignore"/>
+			</mapElseIf>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="CM2opOp.createData_OutputFmt">
+		<mapperConverterExpression>
+			<map from="commonUserList.*.commonfirstName" to="commonUserList.*.commonfirstName" append="false"/>
+			<map from="commonUserList.*.commonBirthDate" to="commonUserList.*.commonBirthDate" append="ignore"/>
+			<map from="topUserList.*.topfirstName" to="topUserList.*.topfirstName" append="false"/>
+			<map from="topUserList.*.topBirthDate" to="topUserList.*.topBirthDate" append="ignore"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024CM2_2ConditionalMappingIFBLOCKFlowFlow>

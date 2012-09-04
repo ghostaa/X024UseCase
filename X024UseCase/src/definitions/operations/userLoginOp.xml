@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userLoginOp>
+
+	<operation id="userLoginOp" context="userLoginOpCtx" implClass="com.ibm.btt.usecase.op.userLogin"/>
+
+	<context id="userLoginOpCtx" type="op">
+		<refKColl refId="simulateSceneOpRecord"/>
+	</context>
+
+	<kColl id="simulateSceneOpRecord">
+		<data id="username" refType="String"/>
+		<data id="password" refType="String"/>
+		<data id="userAccount" refType="Number"/>
+		<data id="saveMoney" refType="Number"/>
+		<data id="withdrawMoney" refType="Number"/>
+		<data id="message" refType="String"/>
+		<data id="userLevel" refType="String"/>
+	</kColl>
+
+</userLoginOp>

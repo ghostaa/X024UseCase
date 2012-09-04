@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="3,-12,611,444" dataBinding="{'ctxType':'proc','ctxFile':'X024MF4UsingaMappingFlowinaFlowFlow','ctxName':'X024MF4UsingaMappingFlowinaFlowCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="850" verticalAlignment="1" widthHint="990"/>
+    <container name="Form" id="form">
+      <gridData heightHint="162" verticalAlignment="1" widthHint="429"/>
+      <widget name="Table" id="table" dataNameForList="sampleUserList">
+        <gridData/>
+        <column text="Index" width="200" widget="" dataName="X024MF4IndexflowData">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column text="samplefirstName" width="200" widget="" dataName="samplefirstName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+      </widget>
+      <widget name="Button" id="button" text="mapFlowButton" action="flowEvent=mapFlow">
+        <gridData/>
+      </widget>
+      <widget name="Button" id="button01" text="resueMapFlowButton" action="flowEvent=resueMapFlow">
+        <gridData/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Image" id="image" location="img/mf4condition.png">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

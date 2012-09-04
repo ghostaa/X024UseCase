@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="_vxwUwO3OEeGIOPksojKaMA">
+  <context xmi:type="transaction:ContextCategory" xmi:id="_vxwUwu3OEeGIOPksojKaMA">
+    <contexts xmi:type="transaction:Context" xmi:id="_2Kn7UO3OEeGIOPksojKaMA" tag="context" id="CreateInsuranceDataCtx">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_2Kn7Ue3OEeGIOPksojKaMA" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_2Kn7Uu3OEeGIOPksojKaMA" name="type" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_2Kn7U-3OEeGIOPksojKaMA" name="addToDynamicKColl" type="java.lang.Boolean"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_2Kn7VO3OEeGIOPksojKaMA" name="parent" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_2Kn7Ve3OEeGIOPksojKaMA" key="_2Kn7Uu3OEeGIOPksojKaMA" value="op"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_2Kn7Vu3OEeGIOPksojKaMA" key="_2Kn7Ue3OEeGIOPksojKaMA" value="CreateInsuranceDataCtx"/>
+      <refElement xmi:type="transaction:RefKColl" xmi:id="_2Z9X0O3OEeGIOPksojKaMA" tag="refKColl">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_2Z9X0e3OEeGIOPksojKaMA" name="refId" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_eGmsMO3PEeGIOPksojKaMA" key="_2Z9X0e3OEeGIOPksojKaMA" value="CreateInsuranceDataRecord"/>
+      </refElement>
+    </contexts>
+  </context>
+  <data xmi:type="transaction:DataCategory" xmi:id="_vxwUw-3OEeGIOPksojKaMA">
+    <dataElements xmi:type="transaction:KeyedCollection" xmi:id="_28bywO3OEeGIOPksojKaMA" tag="kColl" id="CreateInsuranceDataRecord">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_28bywe3OEeGIOPksojKaMA" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_28bywu3OEeGIOPksojKaMA" name="description" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_28byw-3OEeGIOPksojKaMA" name="direction" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_28byxO3OEeGIOPksojKaMA" name="dynamic" type="java.lang.Boolean"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_28byxe3OEeGIOPksojKaMA" key="_28byw-3OEeGIOPksojKaMA" value="both"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_28byxu3OEeGIOPksojKaMA" key="_28bywe3OEeGIOPksojKaMA" value="CreateInsuranceDataRecord"/>
+      <elements xmi:type="transaction:IndexedCollection" xmi:id="_3Tx7wO3OEeGIOPksojKaMA" tag="iColl" id="NormalInsuranceDataList">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3Tx7we3OEeGIOPksojKaMA" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3Tx7wu3OEeGIOPksojKaMA" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3Tx7w-3OEeGIOPksojKaMA" name="direction" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3Tx7xO3OEeGIOPksojKaMA" name="size" type="java.lang.Integer"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3Tx7xe3OEeGIOPksojKaMA" key="_3Tx7w-3OEeGIOPksojKaMA" value="both"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3Tx7xu3OEeGIOPksojKaMA" key="_3Tx7we3OEeGIOPksojKaMA" value="NormalInsuranceDataList"/>
+        <element xmi:type="transaction:RefData" xmi:id="_7jKGQO3OEeGIOPksojKaMA" tag="refData">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_7jKGQe3OEeGIOPksojKaMA" name="refId" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_7jKGQu3OEeGIOPksojKaMA" name="direction" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_7jKGQ-3OEeGIOPksojKaMA" name="alias" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_7jKGRO3OEeGIOPksojKaMA" key="_7jKGQu3OEeGIOPksojKaMA" value="both"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_8AY00O3OEeGIOPksojKaMA" key="_7jKGQe3OEeGIOPksojKaMA" value="Insurance"/>
+        </element>
+      </elements>
+      <elements xmi:type="transaction:IndexedCollection" xmi:id="_401e0O3OEeGIOPksojKaMA" tag="iColl" id="VIPInsuranceDataList">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_401e0e3OEeGIOPksojKaMA" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_401e0u3OEeGIOPksojKaMA" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_401e0-3OEeGIOPksojKaMA" name="direction" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_401e1O3OEeGIOPksojKaMA" name="size" type="java.lang.Integer"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_401e1e3OEeGIOPksojKaMA" key="_401e0-3OEeGIOPksojKaMA" value="both"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_401e1u3OEeGIOPksojKaMA" key="_401e0e3OEeGIOPksojKaMA" value="VIPInsuranceDataList"/>
+        <element xmi:type="transaction:RefData" xmi:id="_8drNwO3OEeGIOPksojKaMA" tag="refData">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_8drNwe3OEeGIOPksojKaMA" name="refId" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_8drNwu3OEeGIOPksojKaMA" name="direction" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_8drNw-3OEeGIOPksojKaMA" name="alias" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_8drNxO3OEeGIOPksojKaMA" key="_8drNwu3OEeGIOPksojKaMA" value="both"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_822iwO3OEeGIOPksojKaMA" key="_8drNwe3OEeGIOPksojKaMA" value="Insurance"/>
+        </element>
+      </elements>
+    </dataElements>
+    <dataElements xmi:type="transaction:KeyedCollection" xmi:id="_3lZFQO_0EeG8-Iny8o4T3w" tag="kColl" id="Insurance">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFQe_0EeG8-Iny8o4T3w" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFQu_0EeG8-Iny8o4T3w" name="description" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFQ-_0EeG8-Iny8o4T3w" name="direction" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFRO_0EeG8-Iny8o4T3w" name="dynamic" type="java.lang.Boolean"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFRe_0EeG8-Iny8o4T3w" key="_3lZFQ-_0EeG8-Iny8o4T3w" value="both"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFRu_0EeG8-Iny8o4T3w" key="_3lZFQe_0EeG8-Iny8o4T3w" value="Insurance"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFR-_0EeG8-Iny8o4T3w" key="_3lZFRO_0EeG8-Iny8o4T3w" value="true"/>
+      <elements xmi:type="transaction:Data" xmi:id="_3lZFSO_0EeG8-Iny8o4T3w" tag="data" id="InsuranceNumber">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFSe_0EeG8-Iny8o4T3w" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFSu_0EeG8-Iny8o4T3w" name="value" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFS-_0EeG8-Iny8o4T3w" name="direction" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFTO_0EeG8-Iny8o4T3w" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFTe_0EeG8-Iny8o4T3w" name="refType" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFTu_0EeG8-Iny8o4T3w" key="_3lZFSe_0EeG8-Iny8o4T3w" value="InsuranceNumber"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFT-_0EeG8-Iny8o4T3w" key="_3lZFS-_0EeG8-Iny8o4T3w" value="both"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFUO_0EeG8-Iny8o4T3w" key="_3lZFTe_0EeG8-Iny8o4T3w" value="Integer"/>
+      </elements>
+      <elements xmi:type="transaction:Data" xmi:id="_3lZFUe_0EeG8-Iny8o4T3w" tag="data" id="InsuranceName">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFUu_0EeG8-Iny8o4T3w" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFU-_0EeG8-Iny8o4T3w" name="value" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFVO_0EeG8-Iny8o4T3w" name="direction" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFVe_0EeG8-Iny8o4T3w" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFVu_0EeG8-Iny8o4T3w" name="refType" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFV-_0EeG8-Iny8o4T3w" key="_3lZFUu_0EeG8-Iny8o4T3w" value="InsuranceName"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFWO_0EeG8-Iny8o4T3w" key="_3lZFVO_0EeG8-Iny8o4T3w" value="both"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFWe_0EeG8-Iny8o4T3w" key="_3lZFVu_0EeG8-Iny8o4T3w" value="String"/>
+      </elements>
+      <elements xmi:type="transaction:Data" xmi:id="_3lZFWu_0EeG8-Iny8o4T3w" tag="data" id="InsurancePrice">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFW-_0EeG8-Iny8o4T3w" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFXO_0EeG8-Iny8o4T3w" name="value" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFXe_0EeG8-Iny8o4T3w" name="direction" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFXu_0EeG8-Iny8o4T3w" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFX-_0EeG8-Iny8o4T3w" name="refType" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFYO_0EeG8-Iny8o4T3w" key="_3lZFW-_0EeG8-Iny8o4T3w" value="InsurancePrice"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFYe_0EeG8-Iny8o4T3w" key="_3lZFXe_0EeG8-Iny8o4T3w" value="both"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFYu_0EeG8-Iny8o4T3w" key="_3lZFX-_0EeG8-Iny8o4T3w" value="BigDecimal"/>
+      </elements>
+      <elements xmi:type="transaction:Data" xmi:id="_3lZFY-_0EeG8-Iny8o4T3w" tag="data" id="InsuranceDuration">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFZO_0EeG8-Iny8o4T3w" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFZe_0EeG8-Iny8o4T3w" name="value" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFZu_0EeG8-Iny8o4T3w" name="direction" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFZ-_0EeG8-Iny8o4T3w" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_3lZFaO_0EeG8-Iny8o4T3w" name="refType" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFae_0EeG8-Iny8o4T3w" key="_3lZFZO_0EeG8-Iny8o4T3w" value="InsuranceDuration"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFau_0EeG8-Iny8o4T3w" key="_3lZFZu_0EeG8-Iny8o4T3w" value="both"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_3lZFa-_0EeG8-Iny8o4T3w" key="_3lZFaO_0EeG8-Iny8o4T3w" value="Date"/>
+      </elements>
+    </dataElements>
+  </data>
+  <format xmi:type="transaction:FormatCategory" xmi:id="_vxwUxO3OEeGIOPksojKaMA"/>
+  <operation xmi:type="transaction:OperationCategory" xmi:id="_vxwUxe3OEeGIOPksojKaMA">
+    <operations xmi:type="transaction:Operation" xmi:id="_z4ofoO_0EeG8-Iny8o4T3w" tag="operation" id="CreateInsuranceDataOp">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_z4ofoe_0EeG8-Iny8o4T3w" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_z4ofou_0EeG8-Iny8o4T3w" name="context" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_z4ofo-_0EeG8-Iny8o4T3w" name="implClass" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_z4ofpO_0EeG8-Iny8o4T3w" name="xVal" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_z4ofpe_0EeG8-Iny8o4T3w" key="_z4ofo-_0EeG8-Iny8o4T3w" value="com.ibm.btt.usecase.op.CreateInsuranceData"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_z4ofpu_0EeG8-Iny8o4T3w" key="_z4ofoe_0EeG8-Iny8o4T3w" value="CreateInsuranceDataOp"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_1pk40O_0EeG8-Iny8o4T3w" key="_z4ofou_0EeG8-Iny8o4T3w" value="CreateInsuranceDataCtx"/>
+    </operations>
+  </operation>
+  <service xmi:type="transaction:ServiceCategory" xmi:id="_vxwUxu3OEeGIOPksojKaMA"/>
+  <globalTag xmi:type="transaction:Taggable" xmi:id="_vxwUx-3OEeGIOPksojKaMA"/>
+</transaction:WorkProduct>

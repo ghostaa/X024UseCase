@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<condition.xml>
+
+	<cond id="commonCon" value="'a' == {0}"/>
+	<cond id="commonCon01" value="'b' == {0}"/></condition.xml>

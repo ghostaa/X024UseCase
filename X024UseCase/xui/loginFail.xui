@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="65,55,616,484" dataBinding="{'ctxType':'proc','ctxFile':'simulateSceneFlow','ctxName':'simulateSceneCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="130" verticalAlignment="1" widthHint="86"/>
+    <container name="Form" id="form">
+      <gridData heightHint="78" verticalAlignment="1" widthHint="78"/>
+      <widget name="Label" id="label" text="Label" dataName="message">
+        <gridData/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="Button" id="button" text="return" buttonType="submit with no data" action="flowEvent=return">
+        <gridData/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

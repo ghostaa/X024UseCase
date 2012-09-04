@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GM1opOp>
+
+	<operation id="GM1opOp" context="GM1opCtx" implClass="com.ibm.btt.usecase.op.GM1op"/>
+
+	<context id="GM1opCtx" type="op">
+		<refKColl refId="X024GM1opRecord"/>
+	</context>
+
+	<kColl id="X024GM1opRecord" dynamic="true">
+		<iColl id="accountList">
+			<kColl id="accountList">
+				<data id="accountfirstlastName" refType="String"/>
+				<data id="accountSecondlastName" refType="String"/>
+				<data id="accountAge" refType="Integer"/>
+				<data id="accountBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<iColl id="VipList">
+			<kColl id="VipList">
+				<data id="vipfirstlastName" refType="String"/>
+				<data id="vipSecondlastName" refType="String"/>
+				<data id="vipAge" refType="Integer"/>
+				<data id="vipBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+</GM1opOp>

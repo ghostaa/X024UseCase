@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024MF4UsingaMappingFlowinaFlowFlow>
+
+	<import file="mapflow\X024MF4UsingaMappingFlowinaFlowFlow.indexPageMf4.mapFlow.out.xml"/>
+
+	<htmlProcessor context="X024MF4UsingaMappingFlowinaFlowCtx" id="X024MF4UsingaMappingFlowinaFlowFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="Mf4opOp"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="Mf4opOp" id="Mf4opOp" type="operation">
+			<transitions>
+				<htmlTransition id="Mf4opOp.create" outputMapFmt="Mf4opOp.create_OutputFmt" targetState="indexPageMf4"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="indexPageMf4.jsp" id="indexPageMf4">
+			<transitions>
+				<htmlTransition id="indexPageMf4.mapFlow" outputMapFmt="X024MF4UsingaMappingFlowinaFlowFlow.indexPageMf4.mapFlow.out" targetState="Mf4MapShow"/>
+				<htmlTransition id="indexPageMf4.resueMapFlow" outputMapFmt="X024MF4UsingaMappingFlowinaFlowFlow.indexPageMf4.mapFlow.out" targetState="Mf4ResueMapShow"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="Mf4MapShow.jsp" id="Mf4MapShow">
+			<transitions>
+				<htmlTransition id="Mf4MapShow.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="Mf4ResueMapShow.jsp" id="Mf4ResueMapShow">
+			<transitions>
+				<htmlTransition id="Mf4ResueMapShow.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+	</htmlProcessor>
+
+	<context id="X024MF4UsingaMappingFlowinaFlowCtx" type="op">
+		<refKColl refId="X024MF4TheMappingFlow EditorCreatingamappingflowRecord"/>
+	</context>
+
+	<kColl id="X024MF4TheMappingFlow EditorCreatingamappingflowRecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="Number"/>
+				<data id="X024MF4IndexflowData" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+				<data id="X024MF4IndexflowData" refType="Integer"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="Mf4opOp.create_OutputFmt">
+		<mapperConverterExpression>
+			<map from="sampleUserList.*.Mf4opIndex" to="sampleUserList.*.X024MF4IndexflowData" append="false"/>
+			<map from="sampleUserList.*.samplefirstName" to="sampleUserList.*.samplefirstName" append="ignore"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024MF4UsingaMappingFlowinaFlowFlow>

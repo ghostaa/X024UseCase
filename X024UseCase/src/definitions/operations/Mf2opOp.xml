@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mf2opOp>
+
+	<operation id="Mf2opOp" context="Mf2opCtx" implClass="com.ibm.btt.usecase.op.Mf2op"/>
+
+	<context id="Mf2opCtx" type="op">
+		<refKColl refId="X024MF2opRecord"/>
+	</context>
+
+	<kColl id="X024MF2opRecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="Number"/>
+				<data id="Mf2opIndex" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList" size="10">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+			</kColl>
+		</iColl>
+		<iColl id="topUserList">
+			<kColl id="topUser">
+				<data id="topfirstName" refType="String"/>
+				<data id="toplastName" refType="String"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+</Mf2opOp>

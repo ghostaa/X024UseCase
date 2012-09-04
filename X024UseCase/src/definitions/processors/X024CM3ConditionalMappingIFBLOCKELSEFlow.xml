@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024CM3ConditionalMappingIFBLOCKELSEFlow>
+
+
+	<htmlProcessor context="X024CM3ConditionalMappingIFBLOCKELSECtx01" id="X024CM3ConditionalMappingIFBLOCKELSEFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="CM3opOp"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="CM3-1" type="final" finalPage="finalPage.jsp"/>
+
+		<htmlState type="page" typeIdInfo="indexPageCM3.jsp" id="CM3">
+			<transitions>
+				<htmlTransition id="CM3.event0" outputMapFmt="CM3.event0_OutputFmt" targetState="CM3Show"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="CM3Show.jsp" id="CM3Show">
+			<transitions>
+				<htmlTransition id="CM3Show.end" targetState="CM3-1"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="CM2opOp" id="CM3opOp" type="operation">
+			<transitions>
+				<htmlTransition id="CM3opOp.createData" outputMapFmt="CM3opOp.createData_OutputFmt" targetState="CM3"/>
+			</transitions>
+		</operationState>
+	</htmlProcessor>
+
+	<context id="X024CM3ConditionalMappingIFBLOCKELSECtx01" type="op" parent="sessionCtx">
+		<refKColl refId="X024CM3ConditionaMappingIFELSEIFELSERecord"/>
+	</context>
+
+	<kColl id="X024CM3ConditionaMappingIFELSEIFELSERecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="String"/>
+				<data id="sampleBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+				<data id="commonBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+		<iColl id="topUserList">
+			<kColl id="topUser">
+				<data id="topfirstName" refType="String"/>
+				<data id="toplastName" refType="String"/>
+				<data id="topBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="CM3.event0_OutputFmt">
+		<mapperConverterExpression>
+			<mapIf expression="commonUserList$*$commonfirstName != &apos;&apos;">
+				<map from="commonUserList.*.commonfirstName" to="sampleUserList.*.samplefirstName" append="false"/>
+				<map from="commonUserList.*.commonBirthDate" to="sampleUserList.*.sampleBirthDate" append="ignore"/>
+			</mapIf>
+			<mapElseIf expression="topUserList$*$topfirstName != &apos;&apos;">
+				<map from="topUserList.*.topfirstName" to="sampleUserList.*.samplefirstName" append="false"/>
+				<map from="topUserList.*.topBirthDate" to="sampleUserList.*.sampleBirthDate" append="ignore"/>
+			</mapElseIf>
+			<mapElse>
+				<map fromExpression="&apos;empty name&apos;" to="sampleUserList.*.samplefirstName" append="ignore"/>
+				<map fromExpression="&apos;1900-01-01&apos;" to="sampleUserList.*.sampleBirthDate" append="ignore"/>
+			</mapElse>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="CM3opOp.createData_OutputFmt">
+		<mapperConverterExpression>
+			<map from="commonUserList.*.commonfirstName" to="commonUserList.*.commonfirstName" append="false"/>
+			<map from="commonUserList.*.commonBirthDate" to="commonUserList.*.commonBirthDate" append="ignore"/>
+			<map from="topUserList.*.topfirstName" to="topUserList.*.topfirstName" append="false"/>
+			<map from="topUserList.*.topBirthDate" to="topUserList.*.topBirthDate" append="ignore"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024CM3ConditionalMappingIFBLOCKELSEFlow>

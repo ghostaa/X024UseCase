@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024MF4UsingaMappingFlowinaFlowFlow.indexPageMf4.mapFlow.out.mft.xml>
+	<fmtDef id="X024MF4UsingaMappingFlowinaFlowFlow.indexPageMf4.mapFlow.out">
+		<mapperConverterExpression>
+			<mapIf id="condition" expression="sampleUserList$*$X024MF4IndexflowData &lt; 6">
+				<map from="sampleUserList.*.X024MF4IndexflowData" to="commonUserList.*.X024MF4IndexflowData" append="false"/>
+				<map from="sampleUserList.*.samplefirstName" to="commonUserList.*.commonfirstName" append="ignore"/>
+			</mapIf>
+			<mapElse>
+			</mapElse>
+		</mapperConverterExpression>
+	</fmtDef>
+</X024MF4UsingaMappingFlowinaFlowFlow.indexPageMf4.mapFlow.out.mft.xml>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CM6opOp>
+
+	<operation id="CM6opOp" context="CM6opCtx" implClass="com.ibm.btt.usecase.op.CM6op"/>
+
+	<context id="CM6opCtx" type="op">
+		<refKColl refId="X024CM6opRecord"/>
+	</context>
+
+	<kColl id="X024CM6opRecord" dynamic="true">
+		<iColl id="accountList">
+			<kColl id="accountList">
+				<data id="accountfirstlastName" refType="String"/>
+				<data id="accountSecondlastName" refType="String"/>
+				<data id="accountAge" refType="Number"/>
+				<data id="accountBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<iColl id="VipList">
+			<kColl id="VipList">
+				<data id="vipfirstlastName" refType="String"/>
+				<data id="vipSecondlastName" refType="String"/>
+				<data id="vipAge" refType="Number"/>
+				<data id="vipBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<data id="testName" refType="String"/>
+	</kColl>
+
+</CM6opOp>

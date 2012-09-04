@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CM2opOp>
+
+	<operation id="CM2opOp" context="CM2opCtx" implClass="com.ibm.btt.usecase.op.CM2op"/>
+
+	<context id="CM2opCtx" type="op">
+		<refKColl refId="CM2opRecord"/>
+	</context>
+
+	<kColl id="CM2opRecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="String"/>
+				<data id="sampleBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+				<data id="commonBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+		<iColl id="topUserList">
+			<kColl id="topUser">
+				<data id="topfirstName" refType="String"/>
+				<data id="toplastName" refType="String"/>
+				<data id="topBirthDate" refType="Date"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+</CM2opOp>

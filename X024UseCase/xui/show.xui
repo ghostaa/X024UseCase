@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="94,51,316,323" dataBinding="{'ctxType':'proc','ctxFile':'TestGlobalFunctionFlow','ctxName':'TestGlobalFunctionCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="324" verticalAlignment="1" widthHint="316"/>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <container name="Form" id="form">
+      <gridData heightHint="206" verticalAlignment="1" widthHint="308"/>
+      <widget name="Table" id="table" dataNameForList="TestGlobalFunctionList">
+        <gridData/>
+        <column text="column0" width="80" widget="" dataName="TestGlobalFunctionData">
+          <tableColumnAlignment>16384</tableColumnAlignment>
+        </column>
+      </widget>
+      <widget name="Label" id="label" text="TestGlobalFunctionData01" dataName="TestGlobalFunctionData01">
+        <gridData/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="Button" id="button" text="Button" action="flowEvent=event0">
+        <gridData/>
+      </widget>
+      <widget name="Link" id="link" text="Link" action="flowEvent=event0">
+        <gridData/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

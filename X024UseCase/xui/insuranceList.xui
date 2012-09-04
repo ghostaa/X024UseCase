@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="56,60,511,384" dataBinding="{'ctxType':'proc','ctxFile':'simulateSceneFlow','ctxName':'simulateSceneCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="130" verticalAlignment="1" widthHint="349"/>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Table" id="table" dataNameForList="InsuranceList">
+      <gridData/>
+      <column text="InsuranceNumber" width="80" widget="" dataName="InsuranceNumber">
+        <tableColumnAlignment>16384</tableColumnAlignment>
+      </column>
+      <column text="InsuranceName" width="80" widget="" dataName="InsuranceName">
+        <tableColumnAlignment>16384</tableColumnAlignment>
+      </column>
+      <column text="InsurancePrice" width="80" widget="" dataName="InsurancePrice">
+        <tableColumnAlignment>16384</tableColumnAlignment>
+      </column>
+      <column text="InsuranceDuration" width="80" widget="" dataName="InsuranceDuration">
+        <tableColumnAlignment>16384</tableColumnAlignment>
+      </column>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="76,37,538,434" dataBinding="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx'}" isRuleDirty="false" extraInfo="{'lastGeneratedRuleFile':'CM5-1Show.js'}">
+  <styles/>
+  <container name="Form" id="form">
+    <gridData heightHint="326" verticalAlignment="1" widthHint="429"/>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Label" id="label" text="spainAccountList">
+      <gridData/>
+    </widget>
+    <widget name="Table" id="table" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx','dataName':'spainAccountList'}">
+      <gridData/>
+      <column text="spainfirstlastName" width="200" widget="" dataName="firstLastName">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+      <column text="spainSecondlastName" width="200" widget="" dataName="secondLastName">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Label" id="label01" text="normalAccountList">
+      <gridData/>
+    </widget>
+    <widget name="Table" id="table01" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx','dataName':'normalAccountList'}">
+      <gridData/>
+      <column text="normalfirstlastName" width="200" widget="" dataName="firstLastName">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+      <column text="normalSecondlastName" width="200" widget="" dataName="secondLastName">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

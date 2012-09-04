@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simulateSceneFlow>
+
+
+	<htmlProcessor context="simulateSceneCtx" id="simulateSceneFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="userLogin"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+
+		<operationState typeIdInfo="userLoginOp" id="userLoginOp" type="operation">
+			<transitions>
+				<htmlTransition id="userLoginOp.success" outputMapFmt="userLoginOp.success_OutputFmt" targetState="loginSuccess"/>
+				<htmlTransition id="userLoginOp.fail" outputMapFmt="userLoginOp.fail_OutputFmt" targetState="loginFail"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="userLogin.jsp" id="userLogin">
+			<transitions>
+				<htmlTransition id="userLogin.login" inputMapFmt="userLogin.login_InputFmt" targetState="userLoginOp"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="loginSuccess.jsp" id="loginSuccess">
+			<transitions>
+				<htmlTransition id="loginSuccess.saveMoney" targetState="saveMoney"/>
+				<htmlTransition id="loginSuccess.withdrawMoney" targetState="withdrawMoney"/>
+				<htmlTransition id="loginSuccess.showinsurance" targetState="CreateInsuranceDataOp"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="loginFail.jsp" id="loginFail">
+			<transitions>
+				<htmlTransition id="loginFail.return" targetState="userLogin"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="saveMoney.jsp" id="saveMoney">
+			<transitions>
+				<htmlTransition id="saveMoney.saveOp" inputMapFmt="saveMoney.saveOp_InputFmt" targetState="saveMoneyOpOp"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="withdrawMoney.jsp" id="withdrawMoney">
+			<transitions>
+				<htmlTransition id="withdrawMoney.withdrawVali" outputMapFmt="withdrawMoney.withdrawVali_OutputFmt" targetState="condition"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="saveMoneyOpOp" id="saveMoneyOpOp" type="operation">
+			<transitions>
+				<htmlTransition id="saveMoneyOpOp.saveSuccess" outputMapFmt="saveMoneyOpOp.saveSuccess_OutputFmt" targetState="saveMoneySuccess"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="saveSuccess.jsp" id="saveMoneySuccess">
+			<transitions>
+				<htmlTransition id="saveMoneySuccess.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<conditionState id="condition" defaultEvent="withdrawnotok" type="condition">
+			<transitions>
+				<htmlTransition id="condition.withdrawok" inputMapFmt="condition.withdrawok_InputFmt" targetState="withdrawokOp"/>
+				<htmlTransition id="condition.withdrawnotok" targetState="withdrawnotok"/>
+			</transitions>
+			<conditions>
+				<condition expression="userAccount &gt;= withdrawMoney" event="withdrawok" />
+			</conditions>
+		</conditionState>
+
+		<operationState typeIdInfo="withdrawokOp" id="withdrawokOp" type="operation">
+			<transitions>
+				<htmlTransition id="withdrawokOp.withdrawSuccess" outputMapFmt="withdrawokOp.withdrawSuccess_OutputFmt" targetState="withdrawok"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="withdrawnotok.jsp" id="withdrawnotok">
+			<transitions>
+				<htmlTransition id="withdrawnotok.returnToWithdrawMonye" targetState="withdrawMoney"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="withdrawok.jsp" id="withdrawok">
+			<transitions>
+				<htmlTransition id="withdrawok.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="CreateInsuranceDataOp" id="CreateInsuranceDataOp" type="operation">
+			<transitions>
+				<htmlTransition id="CreateInsuranceDataOp.insuranceList" outputMapFmt="CreateStockDataOp.stockList_OutputFmt" targetState="insuranceList"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="insuranceList.jsp" id="insuranceList"/>
+	</htmlProcessor>
+
+	<context id="simulateSceneCtx" type="op">
+		<refKColl refId="simulateSceneRecord"/>
+	</context>
+
+	<kColl id="simulateSceneRecord">
+		<data id="username" refType="String"/>
+		<data id="password" refType="String"/>
+		<data id="userAccount" refType="Number"/>
+		<data id="saveMoney" refType="Number"/>
+		<data id="withdrawMoney" refType="Number"/>
+		<data id="message" refType="String"/>
+		<data id="userLevel" refType="String"/>
+		<iColl id="InsuranceList">
+			<refData refId="Insurance"/>
+		</iColl>
+	</kColl>
+
+	<kColl id="Insurance" dynamic="true">
+		<data id="InsuranceNumber" refType="Integer"/>
+		<data id="InsuranceName" refType="String"/>
+		<data id="InsurancePrice" refType="BigDecimal"/>
+		<data id="InsuranceDuration" refType="Date"/>
+	</kColl>
+
+	<fmtDef id="userLoginOp.success_OutputFmt">
+		<mapperConverterExpression>
+			<map from="username" to="username"/>
+			<map from="password" to="password"/>
+			<map from="userAccount" to="userAccount"/>
+			<map from="message" to="message"/>
+			<mapIf expression="userAccount &gt;= 5000">
+				<map fromExpression="&apos;vipUser&apos;" to="userLevel"/>
+			</mapIf>
+			<mapElse>
+				<map fromExpression="&apos;commonUser&apos;" to="userLevel"/>
+			</mapElse>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="userLoginOp.fail_OutputFmt">
+		<mapperConverterExpression>
+			<map from="message" to="message"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="saveMoneyOpOp.saveSuccess_OutputFmt">
+		<mapperConverterExpression>
+			<map from="userAccount" to="userAccount"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="withdrawMoney.withdrawVali_OutputFmt">
+		<mapperConverterExpression>
+			<map from="withdrawMoney" to="withdrawMoney"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="withdrawokOp.withdrawSuccess_OutputFmt">
+		<mapperConverterExpression>
+			<map from="userAccount" to="userAccount"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="userLogin.login_InputFmt">
+		<mapperConverterExpression>
+			<map from="username" to="username"/>
+			<map from="password" to="password"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="saveMoney.saveOp_InputFmt">
+		<mapperConverterExpression>
+			<map from="saveMoney" to="saveMoney"/>
+			<map from="userAccount" to="userAccount"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="condition.withdrawok_InputFmt">
+		<mapperConverterExpression>
+			<map from="userAccount" to="userAccount"/>
+			<map from="withdrawMoney" to="withdrawMoney"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="CreateStockDataOp.stockList_OutputFmt">
+		<mapperConverterExpression>
+			<mapIf expression="userAccount &gt; 10000">
+				<map from="VIPInsuranceDataList" to="InsuranceList" append="false"/>
+			</mapIf>
+			<mapElseIf expression="(userAccount &gt; 500) &amp;&amp; (userAccount &lt;= 10000)">
+				<map from="NormalInsuranceDataList" to="InsuranceList" append="false"/>
+			</mapElseIf>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="CreateStockDataOp.stockList_OutputFmt01">
+		<mapperConverterExpression>
+			<map from="NormalStockDataList" to="StockList" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</simulateSceneFlow>

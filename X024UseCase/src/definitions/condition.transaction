@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="_Qt6poHQGEeGMyKEafXjWew">
+  <globalTag xmi:type="transaction:Taggable" xmi:id="_Qt-UAHQGEeGMyKEafXjWew" comment=""/>
+  <condition xmi:type="transaction:ConditionCategory" xmi:id="_QuGP1HQGEeGMyKEafXjWew">
+    <conditions xmi:type="transaction:ConditionEx" xmi:id="_WKxicOt8EeGnbL9HOdRb-A" id="commonCon" comment="">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_WKxicet8EeGnbL9HOdRb-A" name="deprecated" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_WKxicut8EeGnbL9HOdRb-A" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_WKxic-t8EeGnbL9HOdRb-A" name="description" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_WKxidOt8EeGnbL9HOdRb-A" name="target env" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_WKxidet8EeGnbL9HOdRb-A" name="Variable" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_WKxidut8EeGnbL9HOdRb-A" key="_WKxidOt8EeGnbL9HOdRb-A" value="YN"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_WKxid-t8EeGnbL9HOdRb-A" key="_WKxicut8EeGnbL9HOdRb-A" value="commonCon"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_WKxieOt8EeGnbL9HOdRb-A" key="_WKxic-t8EeGnbL9HOdRb-A" value="File Name: X024CM6_2SameinstanceinbothsourceandtargetofmappingFlow.transaction"/>
+      <conditionRule xmi:type="transaction:ConditionRule" xmi:id="_WKyJgOt8EeGnbL9HOdRb-A">
+        <value xmi:type="transaction:ExpressionValue" xmi:id="_WKyJget8EeGnbL9HOdRb-A">
+          <leftOperand xmi:type="transaction:ConstantValue" xmi:id="_WKyJgut8EeGnbL9HOdRb-A" type="String" constant="'a'"/>
+          <rightOperand xmi:type="transaction:Variable" xmi:id="_WKyJg-t8EeGnbL9HOdRb-A" id="variable">
+            <attributes xmi:type="transaction:Attribute" xmi:id="_WKyJhOt8EeGnbL9HOdRb-A" name="id" required="true" type="java.lang.String"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_WKyJhet8EeGnbL9HOdRb-A" name="type" required="true" type="java.lang.String"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_WKyJhut8EeGnbL9HOdRb-A" key="_WKyJhet8EeGnbL9HOdRb-A" value="String"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_WKyJh-t8EeGnbL9HOdRb-A" key="_WKyJhOt8EeGnbL9HOdRb-A" value="variable"/>
+          </rightOperand>
+        </value>
+      </conditionRule>
+      <variables xmi:type="transaction:Variable" xmi:id="_WKyJiOt8EeGnbL9HOdRb-A" id="variable">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_WKyJiet8EeGnbL9HOdRb-A" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_WKyJiut8EeGnbL9HOdRb-A" name="type" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_WKyJi-t8EeGnbL9HOdRb-A" key="_WKyJiut8EeGnbL9HOdRb-A" value="String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_WKyJjOt8EeGnbL9HOdRb-A" key="_WKyJiet8EeGnbL9HOdRb-A" value="variable"/>
+      </variables>
+    </conditions>
+    <conditions xmi:type="transaction:ConditionEx" xmi:id="_ufoNcOt8EeGnbL9HOdRb-A" id="commonCon01" comment="">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNcet8EeGnbL9HOdRb-A" name="deprecated" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNcut8EeGnbL9HOdRb-A" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNc-t8EeGnbL9HOdRb-A" name="description" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNdOt8EeGnbL9HOdRb-A" name="target env" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNdet8EeGnbL9HOdRb-A" name="Variable" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_ufoNdut8EeGnbL9HOdRb-A" key="_ufoNdOt8EeGnbL9HOdRb-A" value="YN"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_ufoNd-t8EeGnbL9HOdRb-A" key="_ufoNcut8EeGnbL9HOdRb-A" value="commonCon01"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_ufoNeOt8EeGnbL9HOdRb-A" key="_ufoNc-t8EeGnbL9HOdRb-A" value="File Name: X024CM6_2SameinstanceinbothsourceandtargetofmappingFlow.transaction"/>
+      <conditionRule xmi:type="transaction:ConditionRule" xmi:id="_ufoNeet8EeGnbL9HOdRb-A">
+        <value xmi:type="transaction:ExpressionValue" xmi:id="_ufoNeut8EeGnbL9HOdRb-A">
+          <leftOperand xmi:type="transaction:ConstantValue" xmi:id="_ufoNe-t8EeGnbL9HOdRb-A" type="String" constant="'b'"/>
+          <rightOperand xmi:type="transaction:Variable" xmi:id="_ufoNfOt8EeGnbL9HOdRb-A" id="variable">
+            <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNfet8EeGnbL9HOdRb-A" name="id" required="true" type="java.lang.String"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNfut8EeGnbL9HOdRb-A" name="type" required="true" type="java.lang.String"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_ufoNf-t8EeGnbL9HOdRb-A" key="_ufoNfut8EeGnbL9HOdRb-A" value="String"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_ufoNgOt8EeGnbL9HOdRb-A" key="_ufoNfet8EeGnbL9HOdRb-A" value="variable"/>
+          </rightOperand>
+        </value>
+      </conditionRule>
+      <variables xmi:type="transaction:Variable" xmi:id="_ufoNget8EeGnbL9HOdRb-A" id="variable">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNgut8EeGnbL9HOdRb-A" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_ufoNg-t8EeGnbL9HOdRb-A" name="type" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_ufoNhOt8EeGnbL9HOdRb-A" key="_ufoNg-t8EeGnbL9HOdRb-A" value="String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_ufoNhet8EeGnbL9HOdRb-A" key="_ufoNgut8EeGnbL9HOdRb-A" value="variable"/>
+      </variables>
+    </conditions>
+  </condition>
+</transaction:WorkProduct>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreateGlobalOp>
+
+	<operation id="CreateGlobalOp" context="CreateGlobalCtx" implClass="com.ibm.btt.test.CreateGlobal"/>
+
+	<context id="CreateGlobalCtx" type="op">
+		<refKColl refId="CreateGlobalRecord"/>
+	</context>
+
+	<kColl id="CreateGlobalRecord">
+		<iColl id="CreateGlobalList">
+			<kColl id="CreateGlobalRecord01">
+				<data id="CreateGlobalData" refType="Integer"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+</CreateGlobalOp>

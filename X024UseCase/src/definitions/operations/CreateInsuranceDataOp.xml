@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreateInsuranceDataOp>
+
+	<operation id="CreateInsuranceDataOp" context="CreateInsuranceDataCtx" implClass="com.ibm.btt.usecase.op.CreateInsuranceData"/>
+
+	<context id="CreateInsuranceDataCtx" type="op">
+		<refKColl refId="CreateInsuranceDataRecord"/>
+	</context>
+
+	<kColl id="CreateInsuranceDataRecord">
+		<iColl id="NormalInsuranceDataList">
+			<refData refId="Insurance"/>
+		</iColl>
+		<iColl id="VIPInsuranceDataList">
+			<refData refId="Insurance"/>
+		</iColl>
+	</kColl>
+
+	<kColl id="Insurance" dynamic="true">
+		<data id="InsuranceNumber" refType="Integer"/>
+		<data id="InsuranceName" refType="String"/>
+		<data id="InsurancePrice" refType="BigDecimal"/>
+		<data id="InsuranceDuration" refType="Date"/>
+	</kColl>
+
+</CreateInsuranceDataOp>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="3,-12,611,444" dataBinding="{'ctxType':'proc','ctxFile':'X024MF2TheMappingFlowEditorCreatingamappingflowFlow','ctxName':'X024MF2TheMappingFlowEditorCreatingamappingflowCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="706" verticalAlignment="1" widthHint="1192"/>
+    <container name="Form" id="form">
+      <gridData heightHint="152" verticalAlignment="1" widthHint="429"/>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="Table" id="table" dataNameForList="commonUserList">
+        <gridData/>
+        <column text="Index" width="200" widget="" dataName="X024MF2IndexflowData">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column text="commonfirstName" width="200" widget="" dataName="commonfirstName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Image" id="image" location="img/mf22.png">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

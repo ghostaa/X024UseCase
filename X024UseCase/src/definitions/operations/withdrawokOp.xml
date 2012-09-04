@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<withdrawokOp>
+
+	<operation id="withdrawokOp" context="withdrawokCtx" implClass="com.ibm.btt.usecase.op.withdrawOk"/>
+
+	<context id="withdrawokCtx" type="op">
+		<refKColl refId="withdrawOkOpRecord"/>
+	</context>
+
+	<kColl id="withdrawOkOpRecord">
+		<data id="username" refType="String"/>
+		<data id="password" refType="String"/>
+		<data id="userAccount" refType="Number"/>
+		<data id="saveMoney" refType="Number"/>
+		<data id="withdrawMoney" refType="Number"/>
+		<iColl id="userLevel">
+			<kColl id="userLevel">
+				<data id="commonUser" refType="String"/>
+				<data id="vipUser" refType="String"/>
+			</kColl>
+		</iColl>
+		<data id="message" refType="String"/>
+	</kColl>
+
+</withdrawokOp>

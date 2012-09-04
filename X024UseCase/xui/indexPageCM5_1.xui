@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="61,47,589,471" dataBinding="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel">
+    <gridData heightHint="432" verticalAlignment="1" widthHint="547"/>
+    <container name="Form" id="form">
+      <gridData heightHint="424" verticalAlignment="1" widthHint="539" autoSize="false"/>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="Label" id="label01" text="accountList">
+        <gridData/>
+      </widget>
+      <widget name="Table" id="table" dataNameForList="accountList">
+        <gridData horizontalIndent="12"/>
+        <column text="accountfirstlastName" width="200" widget="TextBox" editable="true" dataName="firstLastName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column text="accountSecondlastName" dataNameForList="" width="200" labelField="" urlForList="" widget="ComboBox" editable="true" dataName="secondLastName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+      </widget>
+      <widget name="Button" id="button" text="Button" action="flowEvent=event0">
+        <gridData/>
+      </widget>
+      <widget name="Image" id="image" location="img/cm51.png">
+        <gridData/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

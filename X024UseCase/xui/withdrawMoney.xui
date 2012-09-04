@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="26,23,203,107" dataBinding="{'ctxType':'proc','ctxFile':'simulateSceneFlow','ctxName':'simulateSceneCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="107" verticalAlignment="1" widthHint="203"/>
+    <container name="Form" id="form">
+      <gridData heightHint="77" verticalAlignment="1" widthHint="173"/>
+      <widget name="Label" id="label" text="withdrawMoney:">
+        <gridData/>
+      </widget>
+      <widget name="Text" id="text" dataName="withdrawMoney">
+        <gridData/>
+      </widget>
+      <widget name="Button" id="button" text="withdrawMoney" action="flowEvent=withdrawVali">
+        <gridData/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <gridLayout numColumns="2"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

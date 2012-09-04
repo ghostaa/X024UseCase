@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024CM6SameinstanceinbothsourceandtargetofmappingFlow>
+
+
+	<htmlProcessor context="X024CM6SameinstanceinbothsourceandtargetofmappingCtx" id="X024CM6SameinstanceinbothsourceandtargetofmappingFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="CM6opOp"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+
+		<operationState typeIdInfo="CM6opOp" id="CM6opOp" type="operation">
+			<transitions>
+				<htmlTransition id="CM6opOp.create" outputMapFmt="CM6opOp.create_OutputFmt" targetState="indexPageCM6"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="indexPageCM6.jsp" id="indexPageCM6">
+			<transitions>
+				<htmlTransition id="indexPageCM6.sort" outputMapFmt="indexPageCM6.sort_OutputFmt" targetState="CM6Show"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="CM6Show.jsp" id="CM6Show">
+			<transitions>
+				<htmlTransition id="CM6Show.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+	</htmlProcessor>
+
+	<context id="X024CM6SameinstanceinbothsourceandtargetofmappingCtx" type="op">
+		<refKColl refId="X024CM6Sameinstanceinbothsourceandtargetomapping"/>
+	</context>
+
+	<kColl id="X024CM6Sameinstanceinbothsourceandtargetomapping" dynamic="true">
+		<iColl id="accountList">
+			<kColl id="accountList">
+				<data id="accountfirstlastName" refType="String"/>
+				<data id="accountSecondlastName" refType="String"/>
+				<data id="accountAge" refType="Number"/>
+				<data id="accountBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<iColl id="VipList">
+			<kColl id="VipList">
+				<data id="vipfirstlastName" refType="String"/>
+				<data id="vipSecondlastName" refType="String"/>
+				<data id="vipAge" refType="Number"/>
+				<data id="vipBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<iColl id="spainAccountList">
+			<kColl id="spainAccountList">
+				<data id="spainfirstlastName" refType="String"/>
+				<data id="spainSecondlastName" refType="String"/>
+				<data id="spainAge" refType="Number"/>
+				<data id="spainBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<iColl id="normalAccountList">
+			<kColl id="normalAccountList">
+				<data id="normalfirstlastName" refType="String"/>
+				<data id="normalSecondlastName" refType="String"/>
+				<data id="normalAge" refType="Number"/>
+				<data id="normalBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="initial.start_InputFmt">
+		<mapperConverterExpression>
+			<map from="accountList" to="accountList" append="false"/>
+			<mapIf expression="accountList1$*$balance &gt; 100">
+				<map fromExpression="functs_BTTCollectionFunctions.tableAdd(accountList, &apos;uyyju&apos;, 7867)" to="accountList" append="false"/>
+			</mapIf>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="CM6opOp.create_OutputFmt">
+		<mapperConverterExpression>
+			<map from="accountList.*.accountBalance" to="accountList.*.accountBalance" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="indexPageCM6.sort_OutputFmt">
+		<mapperConverterExpression>
+			<map fromExpression="functs_ConditionFunctions.sortByName(accountList, &apos;accountBalance&apos;)" to="accountList" append="ignore"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024CM6SameinstanceinbothsourceandtargetofmappingFlow>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024MF2TheMappingFlowEditorCreatingamappingflowFlow>
+
+	<import file="mapflow\X024MF2TheMappingFlowEditorCreatingamappingflowFlow.indexPageMf2.mapFlow.out.xml"/>
+
+	<htmlProcessor context="X024MF2TheMappingFlowEditorCreatingamappingflowCtx" id="X024MF2TheMappingFlowEditorCreatingamappingflowFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="Mf2opOp"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="Mf2opOp" id="Mf2opOp" type="operation">
+			<transitions>
+				<htmlTransition id="Mf2opOp.create" outputMapFmt="Mf2opOp.create_OutputFmt" targetState="indexPageMf2"/>
+			</transitions>
+		</operationState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+
+		<htmlState type="page" typeIdInfo="indexPageMf2.jsp" id="indexPageMf2">
+			<transitions>
+				<htmlTransition id="indexPageMf2.mapFlow" outputMapFmt="X024MF2TheMappingFlowEditorCreatingamappingflowFlow.indexPageMf2.mapFlow.out" targetState="Mf2Show"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="Mf2Show.jsp" id="Mf2Show">
+			<transitions>
+				<htmlTransition id="Mf2Show.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+	</htmlProcessor>
+
+	<context id="X024MF2TheMappingFlowEditorCreatingamappingflowCtx" type="op">
+		<refKColl refId="X024MF2TheMappingFlow EditorCreatingamappingflowRecord"/>
+	</context>
+
+	<kColl id="X024MF2TheMappingFlow EditorCreatingamappingflowRecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="Number"/>
+				<data id="X024MF2IndexflowData" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+				<data id="X024MF2IndexflowData" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<iColl id="topUserList">
+			<kColl id="topUser">
+				<data id="topfirstName" refType="String"/>
+				<data id="toplastName" refType="String"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="Mf2opOp.create_OutputFmt">
+		<mapperConverterExpression>
+			<map from="sampleUserList.*.Mf2opIndex" to="sampleUserList.*.X024MF2IndexflowData" append="false"/>
+			<map from="sampleUserList.*.samplefirstName" to="sampleUserList.*.samplefirstName" append="ignore"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024MF2TheMappingFlowEditorCreatingamappingflowFlow>

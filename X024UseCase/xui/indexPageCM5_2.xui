@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="10,15,658,420" dataBinding="{'ctxType':'proc','ctxFile':'X024CM5-2ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-2ConditionalMappingfoiCollsFlowCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel">
+    <gridData heightHint="420" verticalAlignment="1" widthHint="628"/>
+    <container name="Form" id="form">
+      <gridData heightHint="390" verticalAlignment="1" widthHint="620" autoSize="false"/>
+      <widget name="Label" id="label" text="%nls.bttsample/Welcome_To_Btt_Sample">
+        <gridData/>
+      </widget>
+      <widget name="Label" id="label01" text="accountList">
+        <gridData/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="Table" id="table" dataNameForList="accountList">
+        <gridData/>
+        <column text="accountfirstlastName" width="200" widget="TextBox" editable="true" dataName="accountfirstlastName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column text="accountAge" width="200" widget="TextBox" editable="true" dataName="accountAge">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column text="accountBalance" width="200" widget="" dataName="accountBalance">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="Button" id="button" text="Button" action="flowEvent=event0">
+        <gridData/>
+      </widget>
+      <widget name="Image" id="image" location="img/cm52.png">
+        <gridData/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

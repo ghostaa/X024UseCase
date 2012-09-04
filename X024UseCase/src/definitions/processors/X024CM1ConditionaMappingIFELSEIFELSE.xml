@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024CM1ConditionaMappingIFELSEIFELSE>
+
+
+	<htmlProcessor context="X024CM1ConditionaMappingIFELSEIFELSECtx" id="X024CM1ConditionaMappingIFELSEIFELSE">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="Cm1Op"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final" finalPage="finalPage.jsp"/>
+
+		<htmlState type="page" typeIdInfo="indexPageCM1.jsp" id="cm1">
+			<transitions>
+				<htmlTransition id="cm1.event0" outputMapFmt="cm1.event0_OutputFmt" targetState="CM1Show"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="CM1Show.jsp" id="CM1Show">
+			<transitions>
+				<htmlTransition id="CM1Show.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="CM1opOp" id="Cm1Op" type="operation">
+			<transitions>
+				<htmlTransition id="Cm1Op.create" outputMapFmt="Cm1Op.create_OutputFmt" targetState="cm1"/>
+			</transitions>
+		</operationState>
+	</htmlProcessor>
+
+	<operation id="sampleOp" implClass="com.ibm.btt.base.BTTOperation"/>
+
+	<context id="X024CM1ConditionaMappingIFELSEIFELSECtx" type="op" parent="sessionCtx">
+		<refKColl refId="X024CM1ConditionaMappingIFELSEIFELSERecord"/>
+	</context>
+
+	<kColl id="X024CM1ConditionaMappingIFELSEIFELSERecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="Number"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList" size="10">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+			</kColl>
+		</iColl>
+		<iColl id="topUserList">
+			<kColl id="topUser">
+				<data id="topfirstName" refType="String"/>
+				<data id="toplastName" refType="String"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="userInformation_OutputFmt01">
+		<mapperConverterExpression>
+			<map from="*" to="*"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="userInformation_OutputFmt">
+		<mapperConverterExpression>
+			<map from="*" to="*"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="cm1.event0_OutputFmt">
+		<mapperConverterExpression>
+			<mapIf expression="commonUserList$*$commonfirstName != &apos;&apos;">
+				<map from="commonUserList.*.commonfirstName" to="sampleUserList.*.samplefirstName" append="false"/>
+			</mapIf>
+			<mapElseIf expression="topUserList$*$topfirstName != &apos;&apos;">
+				<map from="topUserList.*.topfirstName" to="sampleUserList.*.samplefirstName" append="false"/>
+			</mapElseIf>
+			<mapElse>
+				<map fromExpression="&apos;&apos;" to="sampleUserList.*.samplefirstName" append="ignore"/>
+			</mapElse>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="Cm1Op.create_OutputFmt">
+		<mapperConverterExpression>
+			<map from="commonUserList" to="commonUserList" append="false"/>
+			<map from="topUserList" to="topUserList" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024CM1ConditionaMappingIFELSEIFELSE>

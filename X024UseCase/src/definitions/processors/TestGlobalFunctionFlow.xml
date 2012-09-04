@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestGlobalFunctionFlow>
+
+
+	<htmlProcessor context="TestGlobalFunctionCtx" id="TestGlobalFunctionFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="CreateGlobalOp"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="CreateGlobalOp" id="CreateGlobalOp" type="operation">
+			<transitions>
+				<htmlTransition id="CreateGlobalOp.event0" outputMapFmt="CreateGlobalOp.event0_OutputFmt" targetState="show"/>
+			</transitions>
+		</operationState>
+
+		<htmlState type="page" typeIdInfo="show.jsp" id="show">
+			<transitions>
+				<htmlTransition id="show.event0" inputMapFmt="show.event0_OutputFmt" targetState="showsort"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="showsort.jsp" id="showsort">
+			<transitions>
+				<htmlTransition id="showsort.event0" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+	</htmlProcessor>
+
+	<context id="TestGlobalFunctionCtx" type="op">
+		<refKColl refId="TestGlobalFunctionRecord"/>
+	</context>
+
+	<kColl id="TestGlobalFunctionRecord">
+		<iColl id="TestGlobalFunctionList">
+			<kColl id="TestGlobalFunctionRecord01">
+				<data id="TestGlobalFunctionData" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<data id="TestGlobalFunctionData01" refType="String"/>
+	</kColl>
+
+	<fmtDef id="CreateGlobalOp.event0_OutputFmt">
+		<mapperConverterExpression>
+			<map from="CreateGlobalList.*.CreateGlobalData" to="TestGlobalFunctionList.*.TestGlobalFunctionData" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="show.event0_OutputFmt">
+		<mapperConverterExpression>
+			<map fromExpression="functs_ConditionFunctions.sortByName(TestGlobalFunctionList, &apos;TestGlobalFunctionData&apos;)" to="TestGlobalFunctionList" append="ignore"/>
+			<mapIf expression="&apos;second&apos; == &apos;second&apos;">
+				<map from="TestGlobalFunctionList" to="TestGlobalFunctionList" append="false"/>
+			</mapIf>
+			<map from="TestGlobalFunctionData01" to="TestGlobalFunctionData01"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</TestGlobalFunctionFlow>

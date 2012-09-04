@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="103,77,588,332" dataBinding="{'ctxType':'proc','ctxFile':'simulateSceneFlow','ctxName':'simulateSceneCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="81" verticalAlignment="1" widthHint="210"/>
+    <widget name="Label" id="label" text="You can not get the money!">
+      <gridData/>
+    </widget>
+    <widget name="Label" id="label01" text="Please confirm your userAccount!">
+      <gridData/>
+    </widget>
+    <widget name="Link" id="link" text="return" action="flowEvent=returnToWithdrawMonye">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

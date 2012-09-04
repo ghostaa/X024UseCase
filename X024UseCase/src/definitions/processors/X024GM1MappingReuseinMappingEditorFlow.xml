@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024GM1MappingReuseinMappingEditorFlow>
+
+
+	<htmlProcessor context="X024GM1MappingReuseinMappingEditorCtx" id="X024GM1MappingReuseinMappingEditorFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="GM1opOp"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+
+		<htmlState type="page" typeIdInfo="indexPageGM1.jsp" id="indexPageGM1">
+			<transitions>
+				<htmlTransition id="indexPageGM1.simpleMap" outputMapFmt="indexPageGM1.simpleMap_OutputFmt" targetState="GM6SimpleShow"/>
+				<htmlTransition id="indexPageGM1.resueMap" outputMapFmt="indexPageGM1.resueMap_OutputFmt" targetState="GM6ResueShow"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="GM6SimpleShow.jsp" id="GM6SimpleShow">
+			<transitions>
+				<htmlTransition id="GM6SimpleShow.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="GM6ResueShow.jsp" id="GM6ResueShow">
+			<transitions>
+				<htmlTransition id="GM6ResueShow.ok" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="GM1opOp" id="GM1opOp" type="operation">
+			<transitions>
+				<htmlTransition id="GM1opOp.create" outputMapFmt="GM1opOp.create_OutputFmt" targetState="indexPageGM1"/>
+			</transitions>
+		</operationState>
+	</htmlProcessor>
+
+	<context id="X024GM1MappingReuseinMappingEditorCtx" type="op">
+		<refKColl refId="X024GM1MappingReuseinMappingEditorRecord"/>
+	</context>
+
+	<kColl id="X024GM1MappingReuseinMappingEditorRecord" dynamic="true">
+		<iColl id="accountList">
+			<kColl id="accountList">
+				<data id="accountfirstlastName" refType="String"/>
+				<data id="accountSecondlastName" refType="String"/>
+				<data id="accountAge" refType="Integer"/>
+				<data id="accountBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<iColl id="VipList">
+			<kColl id="VipList">
+				<data id="vipfirstlastName" refType="String"/>
+				<data id="vipSecondlastName" refType="String"/>
+				<data id="vipAge" refType="Integer"/>
+				<data id="vipBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="GM1opOp.create_OutputFmt">
+		<mapperConverterExpression>
+			<map from="accountList.*.accountBalance" to="accountList.*.accountBalance" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="indexPageGM1.simpleMap_OutputFmt">
+		<mapperConverterExpression>
+			<mapIf expression="accountList$*$accountBalance &gt; 3">
+				<map from="accountList.*.accountBalance" to="VipList.*.vipBalance" append="false"/>
+			</mapIf>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="indexPageGM1.resueMap_InputFmt">
+		<mapperConverterExpression>
+			<refFmt refId="indexPageGM1.simpleMap_OutputFmt"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="indexPageGM1.resueMap_OutputFmt">
+		<mapperConverterExpression>
+			<refFmt refId="indexPageGM1.simpleMap_OutputFmt"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024GM1MappingReuseinMappingEditorFlow>

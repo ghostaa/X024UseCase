@@ -1,0 +1,122 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<jsp:useBean id="utb" scope="page" class="com.ibm.btt.cs.html.DSEJspContextServices">
+	
+</jsp:useBean>	
+<html>
+<!-- Generated from indexPageCM1.xui by administrator, on Wed Aug 22 14:17:33 CST 2012 -->
+<head>
+
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<style type="text/css">
+@import "js/dojo/resources/dojo.css";
+@import "js/dijit/themes/claro/claro.css";		
+@import "js/dojox/grid/enhanced/resources/claro/EnhancedGrid.css";
+@import "css/dijit/message.css";
+@import "js/com/ibm/btt/dijit/templates/FileUpload.css";
+@import "js/dijit/themes/claro/document.css";
+@import "js/com/ibm/btt/dijit/templates/Grid.css";
+@import "js/com/ibm/btt/dijit/templates/ScreenCover.css";
+
+.dojoxGrid table { margin: 0; }
+.dj_gecko .dijitTextBoxReadOnly INPUT.dijitInputInner {
+    -moz-user-input: auto;
+}
+.dj_gecko .dijitTextBoxReadOnlyFocused INPUT.dijitInputInner {
+	-moz-user-input: none;
+}
+</style>
+<script>
+	var djConfig =  {
+		baseUrl:"js/dojo/",
+		locale:'',
+		isDebug: true, 
+		parseOnLoad: true
+	};
+</script>
+<script type="text/javascript" src="js/dojo/dojo_BTT.js"></script>
+<script type="text/javascript" src="js/com/ibm/btt/btt.js"></script>
+<script type="text/javascript" >
+dojo.addOnLoad(function(){
+	dojo.style(document.body, "visibility", "");
+});
+</script>
+
+<script type="text/javascript">
+	if(!window.engine){
+		
+			window.engine = new com.ibm.btt.event.NavigationEngine();
+		
+			window.engine = new com.ibm.btt.event.Engine();
+		
+		engine.setMonitor(new com.ibm.btt.event.BaseMonitor());
+		engine.registerCond("js/condition/condition.js");
+	}
+</script>
+</head>
+<body class="claro" style="visibility:hidden">
+  <table id="indexPageCM1_null">
+    <tr>
+      <td valign="top">
+<form id="indexPageCM1_form" dojoType="com.ibm.btt.dijit.Form" method="post" bttParams="{}" bttErrorPage="indexPageCM1.jsp">          <table style="width:326px;height:362px;" id="indexPageCM1_form">
+            <tr>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+<label id="indexPageCM1_label01" dojoType="com.ibm.btt.dijit.Label" text="commonFirstName"></label>              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+<table dojoType="com.ibm.btt.dijit.Grid" id="indexPageCM1_table" jsid="indexPageCM1_table" autoHeight="true" autoWidth="true" storeData="[]" structure="[[{&#039;styles&#039;:&#039;text-align:left;&#039;, &#039;editable&#039;:true, &#039;width&#039;:&#039;80px&#039;, &#039;type&#039;:dojox.btt.grid.cells.StringTextBox, &#039;field&#039;:&#039;commonfirstName&#039;, &#039;name&#039;:&#039;commonfirstName&#039;, widgetProps : {&#039;action&#039;:&#039;no&#039;}},{&#039;styles&#039;:&#039;text-align:left;&#039;, &#039;editable&#039;:false, &#039;width&#039;:&#039;80px&#039;, &#039;type&#039;:dojox.btt.grid.cells.Label, &#039;field&#039;:&#039;commonlastName&#039;, &#039;name&#039;:&#039;commonlastName&#039;, widgetProps : {&#039;action&#039;:&#039;no&#039;}}]]" plugins="{}" storeDataName="commonUserList" selectionMode="none"></table>              </td>
+            </tr>
+            <tr>
+              <td>
+<label id="indexPageCM1_label02" dojoType="com.ibm.btt.dijit.Label" text="topFirstName"></label>              </td>
+            </tr>
+            <tr>
+              <td>
+<table dojoType="com.ibm.btt.dijit.Grid" id="indexPageCM1_table01" jsid="indexPageCM1_table01" autoHeight="true" autoWidth="true" storeData="[]" structure="[[{&#039;styles&#039;:&#039;text-align:left;&#039;, &#039;editable&#039;:true, &#039;width&#039;:&#039;80px&#039;, &#039;type&#039;:dojox.btt.grid.cells.StringTextBox, &#039;field&#039;:&#039;topfirstName&#039;, &#039;name&#039;:&#039;topfirstName&#039;, widgetProps : {&#039;action&#039;:&#039;no&#039;}},{&#039;styles&#039;:&#039;text-align:left;&#039;, &#039;editable&#039;:false, &#039;width&#039;:&#039;80px&#039;, &#039;type&#039;:dojox.btt.grid.cells.Label, &#039;field&#039;:&#039;toplastName&#039;, &#039;name&#039;:&#039;toplastName&#039;, widgetProps : {&#039;action&#039;:&#039;no&#039;}}]]" plugins="{&#039;nestedSorting&#039;:true}" comparatorMap="{&quot;topfirstName&quot; : com.ibm.btt.dijit.GridComparer.instance.compareString({}),&quot;toplastName&quot; : com.ibm.btt.dijit.GridComparer.instance.compareString({})}" storeDataName="topUserList" selectionMode="none" sortEnabled="true"></table>              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+<div id="indexPageCM1_button" type="submit" dojoType="com.ibm.btt.dijit.Button" style="margin:0px;" text="Button" bttParams="{}"></div>              </td>
+            </tr>
+          </table>
+</form>      </td>
+      <td>
+<img id="indexPageCM1_image" dojoType="com.ibm.btt.dijit.Image" location="img/cm1.png"></img>      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

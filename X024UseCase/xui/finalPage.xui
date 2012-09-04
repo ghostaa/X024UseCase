@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="145,139,400,300" dataBinding="{'ctxType':'proc','ctxFile':'X024CM3ConditionalMappingIFBLOCKELSEFlow','ctxName':'X024CM3ConditionalMappingIFBLOCKELSECtx01'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel">
+    <gridData verticalAlignment="1"/>
+    <container name="Form" id="form">
+      <gridData heightHint="258" verticalAlignment="1" widthHint="329" autoSize="false"/>
+      <widget name="Label" id="label" text="%nls.bttsample/Final_Page_Flow">
+        <gridData/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="Label" id="label01" text="sampleFirstName  CM1" dataName="{'ctxType':'proc','ctxFile':'X024CM1ConditionaMappingIFELSEIFELSE','ctxName':'X024CM1ConditionaMappingIFELSEIFELSECtx01','dataName':'sampleUserList.0.samplefirstName'}">
+      <gridData/>
+    </widget>
+    <widget name="Label" id="label02" dataName="{'ctxType':'proc','ctxFile':'X024CM1ConditionaMappingIFELSEIFELSE','ctxName':'X024CM1ConditionaMappingIFELSEIFELSECtx','dataName':'sampleUserList.0.samplefirstName'}">
+      <gridData/>
+    </widget>
+    <widget name="Label" id="label03" text="sampleFirstName  CM2" dataName="{'ctxType':'proc','ctxFile':'X024CM2ConditionalMappingIFBLOCKFlowFlow','ctxName':'X024CM2ConditionalMappingIFBLOCKFlowCtx','dataName':'sampleUserList.0.samplefirstName'}">
+      <gridData/>
+    </widget>
+    <widget name="Label" id="label04" text="sampleBirthDate  CM2" dataName="{'ctxType':'proc','ctxFile':'X024CM2ConditionalMappingIFBLOCKFlowFlow','ctxName':'X024CM2ConditionalMappingIFBLOCKFlowCtx','dataName':'sampleUserList.0.sampleBirthDate'}">
+      <gridData/>
+    </widget>
+    <widget name="Label" id="label05" text="sampleFirstName  CM3">
+      <gridData/>
+    </widget>
+    <widget name="Label" id="label06" text="sampleBirthDate  CM3">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

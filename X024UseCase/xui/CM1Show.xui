@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="133,112,400,300" dataBinding="{'ctxType':'proc','ctxFile':'X024CM1ConditionaMappingIFELSEIFELSE','ctxName':'X024CM1ConditionaMappingIFELSEIFELSECtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="155" verticalAlignment="1" widthHint="330"/>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Label" id="label" text="sampleUserList">
+      <gridData/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Table" id="table" dataNameForList="sampleUserList">
+      <gridData/>
+      <column text="firstname" width="80" widget="" dataName="samplefirstName">
+        <tableColumnAlignment>16384</tableColumnAlignment>
+      </column>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <gridLayout numColumns="2"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

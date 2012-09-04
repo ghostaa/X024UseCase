@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="60,38,528,418" dataBinding="{'ctxType':'proc','ctxFile':'X024CM6_3SameinstanceinbothsourceandtargetofmappingFlow','ctxName':'X024CM6_3SameinstanceinbothsourceandtargetofmappingCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Form" id="form">
+    <gridData heightHint="280" verticalAlignment="1" widthHint="799"/>
+    <widget name="Label" id="label" text="accountList">
+      <gridData/>
+    </widget>
+    <widget name="Table" id="table" dataNameForList="accountList">
+      <gridData/>
+      <column text="accountBalance" width="200" widget="TextBox" editable="true" dataName="accountBalance">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+    </widget>
+    <widget name="Button" id="button" text="Button" action="flowEvent=sort">
+      <gridData/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Image" id="image" location="img/cm63.png">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

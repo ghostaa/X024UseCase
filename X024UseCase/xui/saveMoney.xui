@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="146,54,536,339" dataBinding="{'ctxType':'proc','ctxFile':'simulateSceneFlow','ctxName':'simulateSceneCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="85" verticalAlignment="1" widthHint="181"/>
+    <container name="Form" id="form">
+      <gridData heightHint="77" verticalAlignment="1" widthHint="173"/>
+      <widget name="Label" id="label" text="saveMoney:">
+        <gridData/>
+      </widget>
+      <widget name="Text" id="text" dataName="saveMoney">
+        <gridData/>
+      </widget>
+      <widget name="Button" id="button" text="saveMoney" action="flowEvent=saveOp">
+        <gridData/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

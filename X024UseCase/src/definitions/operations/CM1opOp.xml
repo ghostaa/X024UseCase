@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CM1opOp>
+
+	<operation id="CM1opOp" context="CM1opCtx" implClass="com.ibm.btt.usecase.op.CM1op"/>
+
+	<context id="CM1opCtx" type="op">
+		<refKColl refId="CM1opRecord"/>
+	</context>
+
+	<kColl id="CM1opRecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="Number"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="Date"/>
+			</kColl>
+		</iColl>
+		<iColl id="topUserList">
+			<kColl id="topUser">
+				<data id="topfirstName" refType="String"/>
+				<data id="toplastName" refType="String"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+</CM1opOp>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X024CM5_1ConditionalMappingfoiCollsFlowFlow>
+
+
+	<htmlProcessor context="X024CM5_1ConditionalMappingfoiCollsFlowCtx" id="X024CM5_1ConditionalMappingfoiCollsFlowFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="CM5Op"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="indexPageCM5_1.jsp" id="indexPageCM5-1">
+			<transitions>
+				<htmlTransition id="indexPageCM5-1.event0" outputMapFmt="indexPageCM5.event0_OutputFmt" targetState="CM5-1Show"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState type="page" typeIdInfo="CM5_1Show.jsp" id="CM5-1Show">
+			<transitions>
+				<htmlTransition id="CM5-1Show.end" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+
+		<operationState typeIdInfo="CM5Op" id="CM5Op" type="operation">
+			<transitions>
+				<htmlTransition id="CM5Op.createData" outputMapFmt="CM5Op.createData_OutputFmt" targetState="indexPageCM5-1"/>
+			</transitions>
+		</operationState>
+	</htmlProcessor>
+
+	<context id="X024CM5_1ConditionalMappingfoiCollsFlowCtx" type="op">
+		<refKColl refId="X024CM5_1ConditionalMappingfoiCollsFlowRecord"/>
+	</context>
+
+	<kColl id="X024CM5_1ConditionalMappingfoiCollsFlowRecord" dynamic="true">
+		<iColl id="accountList">
+			<kColl id="accountList">
+				<data id="accountfirstlastName" refType="String"/>
+				<data id="accountSecondlastName" refType="String"/>
+				<data id="accountAge" refType="Integer"/>
+				<data id="accountBalance" refType="Float"/>
+				<data id="firstLastName" refType="String"/>
+				<data id="secondLastName" refType="String"/>
+			</kColl>
+		</iColl>
+		<iColl id="VipList">
+			<kColl id="VipList">
+				<data id="vipfirstlastName" refType="String"/>
+				<data id="vipSecondlastName" refType="String"/>
+				<data id="vipAge" refType="Integer"/>
+				<data id="vipBalance" refType="Float"/>
+			</kColl>
+		</iColl>
+		<iColl id="spainAccountList">
+			<kColl id="spainAccountList">
+				<data id="spainfirstlastName" refType="String"/>
+				<data id="spainSecondlastName" refType="String"/>
+				<data id="spainAge" refType="Integer"/>
+				<data id="spainBalance" refType="Float"/>
+				<data id="firstLastName" refType="String"/>
+				<data id="secondLastName" refType="String"/>
+			</kColl>
+		</iColl>
+		<iColl id="normalAccountList">
+			<kColl id="normalAccountList">
+				<data id="normalfirstlastName" refType="String"/>
+				<data id="normalSecondlastName" refType="String"/>
+				<data id="normalAge" refType="Integer"/>
+				<data id="normalBalance" refType="Float"/>
+				<data id="firstLastName" refType="String"/>
+				<data id="secondLastName" refType="String"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<fmtDef id="indexPageCM5.event0_OutputFmt">
+		<mapperConverterExpression>
+			<mapIf expression="(accountList$*$firstLastName != &apos;&apos;) &amp;&amp; (accountList$*$secondLastName != &apos;&apos;)">
+				<map from="accountList.*" to="spainAccountList.*" append="false"/>
+			</mapIf>
+			<mapElse>
+				<map from="accountList.*" to="normalAccountList.*" append="false"/>
+			</mapElse>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="CM5Op.createData_OutputFmt">
+		<mapperConverterExpression>
+			<map from="acountList.*.firstLastName" to="accountList.*.firstLastName" append="false"/>
+			<map from="acountList.*.secondLastName" to="accountList.*.secondLastName" append="ignore"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</X024CM5_1ConditionalMappingfoiCollsFlowFlow>

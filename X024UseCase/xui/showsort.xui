@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="41,167,400,300" dataBinding="{'ctxType':'proc','ctxFile':'TestGlobalFunctionFlow','ctxName':'TestGlobalFunctionCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel" id="panel">
+    <gridData heightHint="133" verticalAlignment="1" widthHint="308"/>
+    <widget name="Table" id="table" dataNameForList="TestGlobalFunctionList">
+      <gridData/>
+      <column text="column0" width="80" widget="" dataName="TestGlobalFunctionData">
+        <tableColumnAlignment>16384</tableColumnAlignment>
+      </column>
+    </widget>
+    <widget name="Label" id="label" text="Label" dataName="TestGlobalFunctionData01">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

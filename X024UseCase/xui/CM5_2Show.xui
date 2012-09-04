@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="51,54,538,434" dataBinding="{'ctxType':'proc','ctxFile':'X024CM5-2ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-2ConditionalMappingfoiCollsFlowCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Form" id="form">
+    <gridData heightHint="177" verticalAlignment="1" widthHint="851"/>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Label" id="label" text="VipList">
+      <gridData/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <widget name="Table" id="table" dataNameForList="VipList">
+      <gridData/>
+      <column text="accountfirstlastName" width="200" widget="TextBox" editable="true" dataName="accountfirstlastName">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+      <column text="accountAge" width="200" widget="" dataName="accountAge">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+      <column text="accountBalance" width="200" widget="TextBox" editable="true" dataName="accountBalance">
+        <tableColumnAlignment>16777216</tableColumnAlignment>
+      </column>
+    </widget>
+    <widget name="PlaceHolder">
+      <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+    </widget>
+    <gridLayout numColumns="2"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>

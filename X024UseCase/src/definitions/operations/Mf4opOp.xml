@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mf4opOp>
+
+	<operation id="Mf4opOp" context="Mf4opCtx" implClass="com.ibm.btt.usecase.op.Mf4op"/>
+
+	<context id="Mf4opCtx" type="op">
+		<refKColl refId="X024MF4opRecord"/>
+	</context>
+
+	<kColl id="X024MF4opRecord" dynamic="true">
+		<iColl id="sampleUserList">
+			<kColl id="sampleUser">
+				<data id="samplefirstName" refType="String"/>
+				<data id="samplelastName" refType="Number"/>
+				<data id="Mf4opIndex" refType="Integer"/>
+			</kColl>
+		</iColl>
+		<iColl id="commonUserList" size="10">
+			<kColl id="sampleUser">
+				<data id="commonfirstName" refType="String"/>
+				<data id="commonlastName" refType="String"/>
+			</kColl>
+		</iColl>
+	</kColl>
+
+</Mf4opOp>

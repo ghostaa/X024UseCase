@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="131,148,526,482" dataBinding="{'ctxType':'proc','ctxFile':'X024CM2ConditionalMappingIFBLOCKFlowFlow','ctxName':'X024CM2ConditionalMappingIFBLOCKFlowCtx'}" isRuleDirty="false">
+  <styles/>
+  <container name="Panel">
+    <gridData heightHint="518" verticalAlignment="1" widthHint="825"/>
+    <container name="Form" id="form" defaultAction="NO_ACTION">
+      <gridData heightHint="362" verticalAlignment="1" widthHint="405" autoSize="false"/>
+      <widget name="Label" id="label" text="commonUserList">
+        <gridData/>
+      </widget>
+      <widget name="Table" id="table" dataNameForList="commonUserList">
+        <gridData/>
+        <column text="commonFirstName" width="200" widget="TextBox" editable="true" dataName="commonfirstName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column text="commonBirthDate" width="200" widget="TextBox" editable="true" dataName="commonBirthDate">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <widget name="Label" id="label01" text="topUserList">
+        <gridData/>
+      </widget>
+      <widget name="Table" id="table01" dataNameForList="topUserList">
+        <gridData/>
+        <column text="topFirstName" width="200" widget="TextBox" editable="true" dataName="topfirstName">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+        <column text="topBirthDate" width="200" widget="TextBox" editable="true" dataName="topBirthDate">
+          <tableColumnAlignment>16777216</tableColumnAlignment>
+        </column>
+      </widget>
+      <widget name="Button" id="button" text="Button" action="flowEvent=show">
+        <gridData/>
+      </widget>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
+      </widget>
+      <gridLayout numColumns="1"/>
+    </container>
+    <widget name="Image" id="image" location="img/cm2.png">
+      <gridData/>
+    </widget>
+    <gridLayout numColumns="1"/>
+  </container>
+  <rules/>
+  <groups/>
+</XUI>
