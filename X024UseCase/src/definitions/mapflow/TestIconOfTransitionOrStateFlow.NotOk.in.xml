@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestIconOfTransitionOrStateFlow.NotOk.in.mft.xml>
+	<fmtDef id="TestIconOfTransitionOrStateFlow.NotOk.in">
+		<mapperConverterExpression>
+			<mapIf expression="true" id="condition">
+			</mapIf>
+		</mapperConverterExpression>
+	</fmtDef>
+</TestIconOfTransitionOrStateFlow.NotOk.in.mft.xml>

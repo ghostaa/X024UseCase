@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestIconOfTransitionOrStateFlow>
+
+	<import file="mapflow\TestIconOfTransitionOrStateFlow.initial.start.in.xml"/>
+	<import file="mapflow\TestIconOfTransitionOrStateFlow.NotOk.in.xml"/>
+	<import file="mapflow\TestIconOfTransitionOrStateFlow.CM1Show.in.xml"/>
+
+	<htmlProcessor context="TestIconOfTransitionOrStateCtx" id="TestIconOfTransitionOrStateFlow">
+		<htmlState outputMapFmt="initial_OutputFmt" id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" outputMapFmt="initial.start_OutputFmt" inputMapFmt="TestIconOfTransitionOrStateFlow.initial.start.in" targetState="CM1Show"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="NotOk" id="NotOk" type="final" inputMapFmt="TestIconOfTransitionOrStateFlow.NotOk.in"/>
+
+		<htmlState type="page" typeIdInfo="CM1Show.jsp" id="CM1Show" inputMapFmt="TestIconOfTransitionOrStateFlow.CM1Show.in" outputMapFmt="CM1Show_InputFmt">
+			<transitions>
+				<htmlTransition id="CM1Show.event0" outputMapFmt="CM1Show_InputFmt" inputMapFmt="TestIconOfTransitionOrStateFlow.NotOk.in" targetState="NotOk"/>
+			</transitions>
+		</htmlState>
+	</htmlProcessor>
+
+	<context id="TestIconOfTransitionOrStateCtx" type="op">
+		<refKColl refId="TestIconOfTransitionOrStateRecord"/>
+	</context>
+
+	<kColl id="TestIconOfTransitionOrStateRecord">
+		<data id="TestIconOfTransitionOrStateData" refType="String"/>
+		<data id="TestIconOfTransitionOrStateData01" refType="Boolean"/>
+	</kColl>
+
+	<fmtDef id="initial_OutputFmt">
+		<mapperConverterExpression>
+			<map from="TestIconOfTransitionOrStateData" to="TestIconOfTransitionOrStateData"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="initial.start_OutputFmt">
+		<mapperConverterExpression>
+			<map from="TestIconOfTransitionOrStateData01" to="TestIconOfTransitionOrStateData01"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="CM1Show_InputFmt">
+		<mapperConverterExpression>
+			<map from="TestIconOfTransitionOrStateData" to="TestIconOfTransitionOrStateData"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</TestIconOfTransitionOrStateFlow>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestIconOfTransitionOrStateFlow.initial.start.in>
+
+
+	<htmlProcessor soruceContext="false" targetContext="false" id="TestIconOfTransitionOrStateFlow.initial.start.in">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="OK"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+	</htmlProcessor>
+
+</TestIconOfTransitionOrStateFlow.initial.start.in>
