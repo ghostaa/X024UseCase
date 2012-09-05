@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from index.xui by ghost, on Tue Sep 04 15:28:12 CST 2012 -->
+<!-- Generated from index.xui by administrator, on Tue Sep 04 18:09:43 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -141,6 +141,7 @@ dojo.addOnLoad(function(){
             </tr>
             <tr>
               <td>
+                <bttdojo:a id="index_link14" text="mappingFlowScenario1" flowId="mappingFlowScenario1" flowEvent="start"/>
               </td>
             </tr>
           </table>
@@ -149,10 +150,12 @@ dojo.addOnLoad(function(){
     </tr>
     <tr>
       <td>
+        <bttdojo:a id="index_link15" text="mappingFlowScenario2" flowId="mappingFlowScenario2" flowEvent="start"/>
       </td>
     </tr>
     <tr>
       <td>
+        <bttdojo:a id="index_link16" text="mappingFlowScenario3" flowId="mappingFlowScenario3" flowEvent="start"/>
       </td>
     </tr>
     <tr>
