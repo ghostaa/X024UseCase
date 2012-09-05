@@ -123,34 +123,34 @@
       <formatters xmi:type="transaction:Formatter" xmi:id="_wXN9gfZ6EeG1MOqzZnHhXg" tag="fmtDef" id="condition.lessThan6_FlowMapping">
         <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9gvZ6EeG1MOqzZnHhXg" name="id" type="java.lang.String"/>
         <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9g_Z6EeG1MOqzZnHhXg" key="_wXN9gvZ6EeG1MOqzZnHhXg" value="condition.lessThan6_FlowMapping"/>
-        <rootElement xmi:type="transaction:DataMapperConverterFormatElement" xmi:id="_wXN9hPZ6EeG1MOqzZnHhXg" tag="mapperConverterExpression">
-          <mappers xmi:type="transaction:ExpressionDataMapper" xmi:id="_wXN9hfZ6EeG1MOqzZnHhXg" tag="map">
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9hvZ6EeG1MOqzZnHhXg" name="from" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9h_Z6EeG1MOqzZnHhXg" name="to" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9iPZ6EeG1MOqzZnHhXg" name="append" type="java.lang.String"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9ifZ6EeG1MOqzZnHhXg" key="_wXN9hvZ6EeG1MOqzZnHhXg" value="sampleUserList.*.X024MF4IndexflowData"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9ivZ6EeG1MOqzZnHhXg" key="_wXN9h_Z6EeG1MOqzZnHhXg" value="commonUserList.*.X024MF4IndexflowData"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9i_Z6EeG1MOqzZnHhXg" key="_wXN9iPZ6EeG1MOqzZnHhXg" value="false"/>
-            <fromValue xmi:type="transaction:ContextValue" xmi:id="_wXN9jPZ6EeG1MOqzZnHhXg" type="Data" valueToString="sampleUserList.*.X024MF4IndexflowData" field="sampleUserList.*.X024MF4IndexflowData" contextName="mappingFlowScenario2Ctx"/>
-            <toValue xmi:type="transaction:ContextValue" xmi:id="_wXN9jfZ6EeG1MOqzZnHhXg" type="Data" valueToString="commonUserList.*.X024MF4IndexflowData" field="commonUserList.*.X024MF4IndexflowData" contextName="mappingFlowScenario2Ctx"/>
+        <rootElement xmi:type="transaction:DataMapperConverterFormatElement" xmi:id="_tndakPaZEeG7brg3o21GpQ" tag="mapperConverterExpression">
+          <mappers xmi:type="transaction:ExpressionDataMapper" xmi:id="_tndakfaZEeG7brg3o21GpQ" tag="map">
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndakvaZEeG7brg3o21GpQ" name="from" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndak_aZEeG7brg3o21GpQ" name="to" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndalPaZEeG7brg3o21GpQ" name="append" type="java.lang.String"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndalfaZEeG7brg3o21GpQ" key="_tndakvaZEeG7brg3o21GpQ" value="sampleUserList.*.X024MF4IndexflowData"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndalvaZEeG7brg3o21GpQ" key="_tndak_aZEeG7brg3o21GpQ" value="commonUserList.*.X024MF4IndexflowData"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndal_aZEeG7brg3o21GpQ" key="_tndalPaZEeG7brg3o21GpQ" value="false"/>
+            <fromValue xmi:type="transaction:ContextValue" xmi:id="_tndamPaZEeG7brg3o21GpQ" type="Data" valueToString="sampleUserList.*.X024MF4IndexflowData" field="sampleUserList.*.X024MF4IndexflowData" contextName="mappingFlowScenario2Ctx"/>
+            <toValue xmi:type="transaction:ContextValue" xmi:id="_tndamfaZEeG7brg3o21GpQ" type="Data" valueToString="commonUserList.*.X024MF4IndexflowData" field="commonUserList.*.X024MF4IndexflowData" contextName="mappingFlowScenario2Ctx"/>
           </mappers>
-          <mappers xmi:type="transaction:ExpressionDataMapper" xmi:id="_wXN9jvZ6EeG1MOqzZnHhXg" tag="map">
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9j_Z6EeG1MOqzZnHhXg" name="from" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9kPZ6EeG1MOqzZnHhXg" name="to" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9kfZ6EeG1MOqzZnHhXg" name="append" type="java.lang.String"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9kvZ6EeG1MOqzZnHhXg" key="_wXN9j_Z6EeG1MOqzZnHhXg" value="sampleUserList.*.samplefirstName"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9k_Z6EeG1MOqzZnHhXg" key="_wXN9kPZ6EeG1MOqzZnHhXg" value="commonUserList.*.commonfirstName"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9lPZ6EeG1MOqzZnHhXg" key="_wXN9kfZ6EeG1MOqzZnHhXg" value="ignore"/>
-            <fromValue xmi:type="transaction:ContextValue" xmi:id="_wXN9lfZ6EeG1MOqzZnHhXg" type="Data" valueToString="sampleUserList.*.samplefirstName" field="sampleUserList.*.samplefirstName" contextName="mappingFlowScenario2Ctx"/>
-            <toValue xmi:type="transaction:ContextValue" xmi:id="_wXN9lvZ6EeG1MOqzZnHhXg" type="Data" valueToString="commonUserList.*.commonfirstName" field="commonUserList.*.commonfirstName" contextName="mappingFlowScenario2Ctx"/>
+          <mappers xmi:type="transaction:ExpressionDataMapper" xmi:id="_tndamvaZEeG7brg3o21GpQ" tag="map">
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndam_aZEeG7brg3o21GpQ" name="from" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndanPaZEeG7brg3o21GpQ" name="to" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndanfaZEeG7brg3o21GpQ" name="append" type="java.lang.String"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndanvaZEeG7brg3o21GpQ" key="_tndam_aZEeG7brg3o21GpQ" value="sampleUserList.*.samplefirstName"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndan_aZEeG7brg3o21GpQ" key="_tndanPaZEeG7brg3o21GpQ" value="commonUserList.*.commonfirstName"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndaoPaZEeG7brg3o21GpQ" key="_tndanfaZEeG7brg3o21GpQ" value="ignore"/>
+            <fromValue xmi:type="transaction:ContextValue" xmi:id="_tndaofaZEeG7brg3o21GpQ" type="Data" valueToString="sampleUserList.*.samplefirstName" field="sampleUserList.*.samplefirstName" contextName="mappingFlowScenario2Ctx"/>
+            <toValue xmi:type="transaction:ContextValue" xmi:id="_tndaovaZEeG7brg3o21GpQ" type="Data" valueToString="commonUserList.*.commonfirstName" field="commonUserList.*.commonfirstName" contextName="mappingFlowScenario2Ctx"/>
           </mappers>
-          <mappers xmi:type="transaction:ExpressionDataMapper" xmi:id="_wXN9l_Z6EeG1MOqzZnHhXg" tag="map">
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9mPZ6EeG1MOqzZnHhXg" name="from" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
-            <attributes xmi:type="transaction:Attribute" xmi:id="_wXN9mfZ6EeG1MOqzZnHhXg" name="to" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9mvZ6EeG1MOqzZnHhXg" key="_wXN9mPZ6EeG1MOqzZnHhXg" value="userAmount"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_wXN9m_Z6EeG1MOqzZnHhXg" key="_wXN9mfZ6EeG1MOqzZnHhXg" value="userAmount"/>
-            <fromValue xmi:type="transaction:ContextValue" xmi:id="_wXN9nPZ6EeG1MOqzZnHhXg" type="Data" valueToString="userAmount" field="userAmount" contextName="mappingFlowScenario2Ctx"/>
-            <toValue xmi:type="transaction:ContextValue" xmi:id="_wXN9nfZ6EeG1MOqzZnHhXg" type="Data" valueToString="userAmount" field="userAmount" contextName="mappingFlowScenario2Ctx"/>
+          <mappers xmi:type="transaction:ExpressionDataMapper" xmi:id="_tndao_aZEeG7brg3o21GpQ" tag="map">
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndapPaZEeG7brg3o21GpQ" name="from" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_tndapfaZEeG7brg3o21GpQ" name="to" type="com.ibm.btt.tools.transaction.dominate.manipulators.dialog.DataMappingFmt"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndapvaZEeG7brg3o21GpQ" key="_tndapPaZEeG7brg3o21GpQ" value="userAmount"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_tndap_aZEeG7brg3o21GpQ" key="_tndapfaZEeG7brg3o21GpQ" value="userAmount"/>
+            <fromValue xmi:type="transaction:ContextValue" xmi:id="_tndaqPaZEeG7brg3o21GpQ" type="Data" valueToString="userAmount" field="userAmount" contextName="mappingFlowScenario2Ctx"/>
+            <toValue xmi:type="transaction:ContextValue" xmi:id="_tndaqfaZEeG7brg3o21GpQ" type="Data" valueToString="userAmount" field="userAmount" contextName="mappingFlowScenario2Ctx"/>
           </mappers>
         </rootElement>
       </formatters>

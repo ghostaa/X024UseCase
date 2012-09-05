@@ -4,6 +4,9 @@
 		<mapperConverterExpression>
 			<mapIf expression="userAmount &gt; 600" id="condition-1">
 				<mapIf expression="sampleUserList$*$X024MF4IndexflowData &lt; 6" id="condition">
+					<map from="sampleUserList.*.X024MF4IndexflowData" to="commonUserList.*.X024MF4IndexflowData" append="false"/>
+					<map from="sampleUserList.*.samplefirstName" to="commonUserList.*.commonfirstName" append="ignore"/>
+					<map from="userAmount" to="userAmount"/>
 				</mapIf>
 				<mapElse>
 				</mapElse>
