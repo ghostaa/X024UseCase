@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="29,28,651,509" dataBinding="{'ctxType':'proc','ctxFile':'simulateSceneFlow','ctxName':'simulateSceneCtx'}" isRuleDirty="false">
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="29,28,651,509" dataBinding="{'ctxType':'proc','ctxFile':'simulateSceneFlow','ctxName':'simulateSceneCtx'}" isRuleDirty="false" extraInfo="{'lastGeneratedRuleFile':'userLogin.js'}">
   <styles/>
   <container name="Panel" id="panel">
     <gridData heightHint="584" verticalAlignment="1" widthHint="430"/>
-    <container name="Form" id="form">
+    <container name="Form" id="form" defaultAction="flowEvent=login">
       <gridData heightHint="400" widthHint="400" autoSize="false"/>
       <widget name="Label" id="label" text="username:">
         <gridData/>
@@ -41,11 +41,24 @@
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Button" id="button" text="submit" action="flowEvent=login">
-        <gridData/>
-      </widget>
-      <widget name="Button" id="button01" text="reset" buttonType="reset">
-        <gridData/>
+      <container name="Panel" id="panel01">
+        <gridData heightHint="33" verticalAlignment="1" widthHint="294"/>
+        <widget name="Button" id="button" text="submit" action="flowEvent=login">
+          <gridData/>
+        </widget>
+        <widget name="Button" id="button01" text="reset" buttonType="reset">
+          <gridData/>
+        </widget>
+        <widget name="Button" id="button02" text="user A" buttonType="button" action="flowEvent=login">
+          <gridData/>
+        </widget>
+        <widget name="Button" id="button03" text="user B" buttonType="button">
+          <gridData/>
+        </widget>
+        <gridLayout numColumns="4"/>
+      </container>
+      <widget name="PlaceHolder">
+        <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
@@ -105,6 +118,41 @@
     </widget>
     <gridLayout numColumns="2"/>
   </container>
-  <rules/>
+  <rules>
+    <rule name="ecaRule">
+      <events>
+        <event widget="button02" event="onClick"/>
+      </events>
+      <trueActions>
+        <action type="widgetProperty" widget="text01" property="value">
+          <value type="constant" constant="'a'"/>
+        </action>
+        <action type="widgetProperty" widget="text" property="value">
+          <value type="constant" constant="'a'"/>
+        </action>
+        <action type="widgetFunction" widget="form">
+          <function name="submit"/>
+        </action>
+      </trueActions>
+      <falseActions/>
+    </rule>
+    <rule name="ecaRule01">
+      <events>
+        <event widget="button03" event="onClick"/>
+      </events>
+      <trueActions>
+        <action type="widgetProperty" widget="text01" property="value">
+          <value type="constant" constant="'b'"/>
+        </action>
+        <action type="widgetProperty" widget="text" property="value">
+          <value type="constant" constant="'b'"/>
+        </action>
+        <action type="widgetFunction" widget="form">
+          <function name="submit"/>
+        </action>
+      </trueActions>
+      <falseActions/>
+    </rule>
+  </rules>
   <groups/>
 </XUI>

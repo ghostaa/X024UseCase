@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from userLogin.xui by ghost, on Tue Sep 04 15:28:14 CST 2012 -->
+<!-- Generated from userLogin.xui by ghost, on Thu Sep 13 19:26:44 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -59,10 +59,11 @@ dojo.addOnLoad(function(){
 </script>
 </head>
 <body class="claro" style="visibility:hidden">
+<script type="text/javascript" src="<%=JSPUtil.getWebContextRootUrl()%>jsp/userLogin.js"> </script>
   <table id="userLogin_panel">
     <tr>
       <td>
-        <bttdojo:form id="userLogin_form" errorPage="userLogin.jsp">
+        <bttdojo:form id="userLogin_form" flowEvent="login" errorPage="userLogin.jsp">
           <table style="width:400px;height:400px;" id="userLogin_form">
             <tr>
               <td>
@@ -101,11 +102,25 @@ dojo.addOnLoad(function(){
               </td>
             </tr>
             <tr>
-              <td>
-                <bttdojo:button id="userLogin_button" type="submit" text="submit" flowEvent="login"/>
+              <td valign="top">
+                  <table id="userLogin_panel01">
+                    <tr>
+                      <td>
+                        <bttdojo:button id="userLogin_button" type="submit" text="submit" flowEvent="login"/>
+                      </td>
+                      <td>
+                        <bttdojo:button id="userLogin_button01" type="reset" text="reset"/>
+                      </td>
+                      <td>
+                        <bttdojo:button id="userLogin_button02" type="button" text="user A" flowEvent="login"/>
+                      </td>
+                      <td>
+                        <bttdojo:button id="userLogin_button03" type="button" text="user B"/>
+                      </td>
+                    </tr>
+                  </table>
               </td>
               <td>
-                <bttdojo:button id="userLogin_button01" type="reset" text="reset"/>
               </td>
               <td>
               </td>
