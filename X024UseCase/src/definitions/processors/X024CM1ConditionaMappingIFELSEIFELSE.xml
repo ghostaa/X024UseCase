@@ -40,7 +40,7 @@
 		<iColl id="sampleUserList">
 			<kColl id="sampleUser">
 				<data id="samplefirstName" refType="String"/>
-				<data id="samplelastName" refType="Number"/>
+				<data id="samplelastName" refType="String"/>
 			</kColl>
 		</iColl>
 		<iColl id="commonUserList" size="10">
@@ -85,7 +85,7 @@
 
 	<fmtDef id="Cm1Op.create_OutputFmt">
 		<mapperConverterExpression>
-			<map from="commonUserList" to="commonUserList" append="false"/>
+			<map from="commonUserListOp" to="commonUserList" append="false"/>
 			<map from="topUserList" to="topUserList" append="false"/>
 		</mapperConverterExpression>
 	</fmtDef>

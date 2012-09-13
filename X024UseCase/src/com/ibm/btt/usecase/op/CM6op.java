@@ -13,7 +13,7 @@ public class CM6op extends BTTServerOperation {
  */
   public void execute() throws Exception {
 	  
-	     Context context=ContextFactory.currentContext();
+	     Context context=this.getContext();
 		 context.getKeyedCollection().setDynamic(true);
 		 for (int i = 0; i < 10; i++) {
 			 context.setValueAt("accountList."+i+".accountBalance", (float)100-i);

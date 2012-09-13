@@ -15,7 +15,7 @@ public class CM5 extends BTTServerOperation {
  * <!-- end-user-doc -->
  */
   public void execute() throws Exception {
-	  	Context context=ContextFactory.currentContext();
+	  	Context context=this.getContext();
 		 context.getKeyedCollection().setDynamic(true);
 		 for (int i = 0; i < 10; i++) {
 			 if (i<3) {

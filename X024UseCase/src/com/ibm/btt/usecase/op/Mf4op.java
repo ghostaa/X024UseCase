@@ -16,7 +16,7 @@ public class Mf4op extends BTTServerOperation {
  */
   public void execute() throws Exception {
 	  
-	  Context context=ContextFactory.currentContext();
+	  Context context=this.getContext();
 		 context.getKeyedCollection().setDynamic(true);
 		 for (int i = 0; i < 10; i++) {
 			 context.setValueAt("sampleUserList."+i+".Mf4opIndex",i);

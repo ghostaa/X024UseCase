@@ -11,13 +11,13 @@
 		<iColl id="sampleUserList">
 			<kColl id="sampleUser">
 				<data id="samplefirstName" refType="String"/>
-				<data id="samplelastName" refType="Number"/>
+				<data id="samplelastName" refType="String"/>
 			</kColl>
 		</iColl>
-		<iColl id="commonUserList">
+		<iColl id="commonUserListOp">
 			<kColl id="sampleUser">
 				<data id="commonfirstName" refType="String"/>
-				<data id="commonlastName" refType="Date"/>
+				<data id="commonlastName" refType="String"/>
 			</kColl>
 		</iColl>
 		<iColl id="topUserList">

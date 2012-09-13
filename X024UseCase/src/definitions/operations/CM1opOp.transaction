@@ -55,17 +55,17 @@
             <attributes xmi:type="transaction:Attribute" xmi:id="_5cxghOQ9EeGdiN04NKbBGQ" name="refType" required="true" type="java.lang.String"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgheQ9EeGdiN04NKbBGQ" key="_5cxggOQ9EeGdiN04NKbBGQ" value="samplelastName"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxghuQ9EeGdiN04NKbBGQ" key="_5cxgguQ9EeGdiN04NKbBGQ" value="both"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgh-Q9EeGdiN04NKbBGQ" key="_5cxghOQ9EeGdiN04NKbBGQ" value="Number"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgh-Q9EeGdiN04NKbBGQ" key="_5cxghOQ9EeGdiN04NKbBGQ" value="String"/>
           </elements>
         </element>
       </elements>
-      <elements xmi:type="transaction:IndexedCollection" xmi:id="_5cxgiOQ9EeGdiN04NKbBGQ" tag="iColl" id="commonUserList">
+      <elements xmi:type="transaction:IndexedCollection" xmi:id="_5cxgiOQ9EeGdiN04NKbBGQ" tag="iColl" id="commonUserListOp">
         <attributes xmi:type="transaction:Attribute" xmi:id="_5cxgieQ9EeGdiN04NKbBGQ" name="id" required="true" type="java.lang.String"/>
         <attributes xmi:type="transaction:Attribute" xmi:id="_5cxgiuQ9EeGdiN04NKbBGQ" name="description" type="java.lang.String"/>
         <attributes xmi:type="transaction:Attribute" xmi:id="_5cxgi-Q9EeGdiN04NKbBGQ" name="direction" type="java.lang.String"/>
         <attributes xmi:type="transaction:Attribute" xmi:id="_5cxgjOQ9EeGdiN04NKbBGQ" name="size" type="java.lang.Integer"/>
         <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgjeQ9EeGdiN04NKbBGQ" key="_5cxgi-Q9EeGdiN04NKbBGQ" value="both"/>
-        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgjuQ9EeGdiN04NKbBGQ" key="_5cxgieQ9EeGdiN04NKbBGQ" value="commonUserList"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgjuQ9EeGdiN04NKbBGQ" key="_5cxgieQ9EeGdiN04NKbBGQ" value="commonUserListOp"/>
         <element xmi:type="transaction:KeyedCollection" xmi:id="_5cxgj-Q9EeGdiN04NKbBGQ" tag="kColl" id="sampleUser">
           <attributes xmi:type="transaction:Attribute" xmi:id="_5cxgkOQ9EeGdiN04NKbBGQ" name="id" required="true" type="java.lang.String"/>
           <attributes xmi:type="transaction:Attribute" xmi:id="_5cxgkeQ9EeGdiN04NKbBGQ" name="description" type="java.lang.String"/>
@@ -91,7 +91,7 @@
             <attributes xmi:type="transaction:Attribute" xmi:id="_5cxgpOQ9EeGdiN04NKbBGQ" name="refType" required="true" type="java.lang.String"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgpeQ9EeGdiN04NKbBGQ" key="_5cxgoOQ9EeGdiN04NKbBGQ" value="commonlastName"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgpuQ9EeGdiN04NKbBGQ" key="_5cxgouQ9EeGdiN04NKbBGQ" value="both"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgp-Q9EeGdiN04NKbBGQ" key="_5cxgpOQ9EeGdiN04NKbBGQ" value="Date"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_5cxgp-Q9EeGdiN04NKbBGQ" key="_5cxgpOQ9EeGdiN04NKbBGQ" value="String"/>
           </elements>
         </element>
       </elements>

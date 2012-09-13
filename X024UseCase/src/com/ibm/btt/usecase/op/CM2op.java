@@ -16,7 +16,7 @@ public class CM2op extends BTTServerOperation {
  */
   public void execute() throws Exception {
 	  
-	  Context context=ContextFactory.currentContext();
+	  Context context=this.getContext();
 		 context.getKeyedCollection().setDynamic(true);
 		 for (int i = 0; i < 10; i++) {
 			 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

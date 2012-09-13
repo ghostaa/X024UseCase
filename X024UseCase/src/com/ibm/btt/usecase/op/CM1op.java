@@ -13,19 +13,19 @@ public class CM1op extends BTTServerOperation {
  */
   public void execute() throws Exception {
 	  
-	  Context context=ContextFactory.currentContext();
+	  Context context=this.getContext();
 		 context.getKeyedCollection().setDynamic(true);
 		 for (int i = 0; i < 10; i++) {
 			 if (i%2==0) {
 				 
-				 context.setValueAt("commonUserList."+i+".commonfirstName", "common name "+i);
+				 context.setValueAt("commonUserListOp."+i+".commonfirstName", "common name "+i);
 				 context.setValueAt("topUserList."+i+".topfirstName", "");
 				 
 			}else {
 				 context.setValueAt("topUserList."+i+".topfirstName", "top first name "+i);
-				 context.setValueAt("commonUserList."+i+".commonfirstName", "");
+				 context.setValueAt("commonUserListOp."+i+".commonfirstName", "");
 			}
-			 context.setValueAt("commonUserList."+i+".commonlastName", "lastname"+i);
+			 context.setValueAt("commonUserListOp."+i+".commonlastName", "lastname"+i);
 			 context.setValueAt("topUserList."+i+".toplastName", "lastname"+i);
 		}
 		 setContext(context);
