@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from Mf2Show.xui by ghost, on Tue Sep 04 15:28:11 CST 2012 -->
+<!-- Generated from Mf2Show.xui by ghost, on Fri Sep 14 18:23:58 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -75,8 +75,8 @@ dojo.addOnLoad(function(){
             <tr>
               <td>
                 <bttdojo:table id="Mf2Show_table" dataNameForList="commonUserList" isPageable="false">
-                  <bttdojo:column text="Index" align="center" width="200" dataName="X024MF2IndexflowData"/>
-                  <bttdojo:column text="commonfirstName" align="center" width="200" dataName="commonfirstName"/>
+                  <bttdojo:column align="center" dataName="X024MF2IndexflowData" width="200" text="Index"/>
+                  <bttdojo:column align="center" dataName="commonfirstName" width="200" text="commonfirstName"/>
                 </bttdojo:table>
               </td>
             </tr>

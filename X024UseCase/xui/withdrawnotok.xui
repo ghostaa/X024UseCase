@@ -9,7 +9,7 @@
     <widget name="Label" id="label01" text="Please confirm your userAccount!">
       <gridData/>
     </widget>
-    <widget name="Link" id="link" text="return" action="flowEvent=returnToWithdrawMonye">
+    <widget name="Link" action="flowEvent=returnToWithdrawMonye" id="link" text="return">
       <gridData/>
     </widget>
     <gridLayout numColumns="1"/>

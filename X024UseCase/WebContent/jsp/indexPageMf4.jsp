@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from indexPageMf4.xui by ghost, on Tue Sep 04 15:28:13 CST 2012 -->
+<!-- Generated from indexPageMf4.xui by ghost, on Fri Sep 14 18:24:00 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -67,8 +67,8 @@ dojo.addOnLoad(function(){
             <tr>
               <td>
                 <bttdojo:table id="indexPageMf4_table" dataNameForList="sampleUserList" isPageable="false">
-                  <bttdojo:column text="Index" align="center" width="200" dataName="X024MF4IndexflowData"/>
-                  <bttdojo:column text="samplefirstName" align="center" width="200" dataName="samplefirstName"/>
+                  <bttdojo:column align="center" dataName="X024MF4IndexflowData" width="200" text="Index"/>
+                  <bttdojo:column align="center" dataName="samplefirstName" width="200" text="samplefirstName"/>
                 </bttdojo:table>
               </td>
             </tr>

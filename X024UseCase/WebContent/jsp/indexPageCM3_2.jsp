@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from indexPageCM3_2.xui by ghost, on Tue Sep 04 15:28:12 CST 2012 -->
+<!-- Generated from indexPageCM3_2.xui by ghost, on Fri Sep 14 18:23:59 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -80,8 +80,8 @@ dojo.addOnLoad(function(){
             <tr>
               <td>
                 <bttdojo:table id="indexPageCM3_2_table" dataNameForList="commonUserList" isPageable="false" operationName="PAG_indexPageCM3_2_table" directPagination="false" paginationWhenLoading="false" rowsPerPage="25">
-                  <bttdojo:column text="commonFirstName" align="center" width="200" type="String" widget="TextBox" dataName="commonfirstName"/>
-                  <bttdojo:column text="commonBirthDate" pattern="yyyy-MM-dd" align="center" width="200" type="Date" widget="TextBox" dataName="commonBirthDate"/>
+                  <bttdojo:column widget="TextBox" align="center" dataName="commonfirstName" width="200" type="String" text="commonFirstName"/>
+                  <bttdojo:column pattern="yyyy-MM-dd" widget="TextBox" align="center" dataName="commonBirthDate" width="200" type="Date" text="commonBirthDate"/>
                 </bttdojo:table>
               </td>
             </tr>

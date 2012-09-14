@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from showsort.xui by ghost, on Tue Sep 04 15:28:13 CST 2012 -->
+<!-- Generated from showsort.xui by ghost, on Fri Sep 14 18:24:03 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -63,7 +63,7 @@ dojo.addOnLoad(function(){
     <tr>
       <td>
         <bttdojo:table id="showsort_table" dataNameForList="TestGlobalFunctionList" isPageable="false">
-          <bttdojo:column text="column0" align="left" width="80" dataName="TestGlobalFunctionData"/>
+          <bttdojo:column align="left" dataName="TestGlobalFunctionData" width="80" text="column0"/>
         </bttdojo:table>
       </td>
     </tr>

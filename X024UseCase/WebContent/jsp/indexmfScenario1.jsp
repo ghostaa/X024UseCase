@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from indexmfScenario1.xui by administrator, on Tue Sep 04 17:26:32 CST 2012 -->
+<!-- Generated from indexmfScenario1.xui by ghost, on Fri Sep 14 18:24:00 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 

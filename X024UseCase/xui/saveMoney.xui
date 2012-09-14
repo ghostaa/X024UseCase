@@ -8,10 +8,10 @@
       <widget name="Label" id="label" text="saveMoney:">
         <gridData/>
       </widget>
-      <widget name="Text" id="text" dataName="saveMoney">
+      <widget name="Text" dataName="saveMoney" id="text">
         <gridData/>
       </widget>
-      <widget name="Button" id="button" text="saveMoney" action="flowEvent=saveOp">
+      <widget name="Button" action="flowEvent=saveOp" id="button" text="saveMoney">
         <gridData/>
       </widget>
       <gridLayout numColumns="1"/>

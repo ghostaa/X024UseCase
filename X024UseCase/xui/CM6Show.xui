@@ -12,9 +12,9 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="accountList">
+    <widget name="Table" dataNameForList="accountList" id="table">
       <gridData/>
-      <column text="accountBalance" width="200" widget="" dataName="accountBalance">
+      <column widget="" dataName="accountBalance" width="200" text="accountBalance">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
     </widget>
@@ -27,7 +27,7 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Image" id="image" location="img/cm6log.png">
+    <widget name="Image" location="img/cm6log.png" id="image">
       <gridData/>
     </widget>
     <gridLayout numColumns="2"/>

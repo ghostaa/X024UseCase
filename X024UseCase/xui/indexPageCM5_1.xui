@@ -11,19 +11,19 @@
       <widget name="Label" id="label01" text="accountList">
         <gridData/>
       </widget>
-      <widget name="Table" id="table" dataNameForList="accountList">
+      <widget name="Table" dataNameForList="accountList" id="table">
         <gridData horizontalIndent="12"/>
-        <column text="accountfirstlastName" width="200" widget="TextBox" editable="true" dataName="firstLastName">
+        <column widget="TextBox" editable="true" dataName="firstLastName" width="200" text="accountfirstlastName">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
-        <column text="accountSecondlastName" dataNameForList="" width="200" labelField="" urlForList="" widget="ComboBox" editable="true" dataName="secondLastName">
+        <column dataNameForList="" widget="ComboBox" editable="true" dataName="secondLastName" width="200" labelField="" urlForList="" text="accountSecondlastName">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
       </widget>
-      <widget name="Button" id="button" text="Button" action="flowEvent=event0">
+      <widget name="Button" action="flowEvent=event0" id="button" text="Button">
         <gridData/>
       </widget>
-      <widget name="Image" id="image" location="img/cm51.png">
+      <widget name="Image" location="img/cm51.png" id="image">
         <gridData/>
       </widget>
       <widget name="PlaceHolder">

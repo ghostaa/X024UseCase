@@ -6,18 +6,18 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="InsuranceList">
+    <widget name="Table" dataNameForList="InsuranceList" id="table">
       <gridData/>
-      <column text="InsuranceNumber" width="80" widget="" dataName="InsuranceNumber">
+      <column widget="" dataName="InsuranceNumber" width="80" text="InsuranceNumber">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
-      <column text="InsuranceName" width="80" widget="" dataName="InsuranceName">
+      <column widget="" dataName="InsuranceName" width="80" text="InsuranceName">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
-      <column text="InsurancePrice" width="80" widget="" dataName="InsurancePrice">
+      <column widget="" dataName="InsurancePrice" width="80" text="InsurancePrice">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
-      <column text="InsuranceDuration" width="80" widget="" dataName="InsuranceDuration">
+      <column widget="" dataName="InsuranceDuration" width="80" text="InsuranceDuration">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
     </widget>

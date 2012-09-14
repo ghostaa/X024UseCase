@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from indexPageCM6.xui by ghost, on Tue Sep 04 15:28:12 CST 2012 -->
+<!-- Generated from indexPageCM6.xui by ghost, on Fri Sep 14 18:23:59 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -69,7 +69,7 @@ dojo.addOnLoad(function(){
     <tr>
       <td>
         <bttdojo:table id="indexPageCM6_table" dataNameForList="accountList" isPageable="false">
-          <bttdojo:column text="accountBalance" align="center" width="200" type="Number" widget="TextBox" numberType="float" decimalPlaces="2" dataName="accountBalance"/>
+          <bttdojo:column numberType="float" widget="TextBox" align="center" dataName="accountBalance" width="200" type="Number" decimalPlaces="2" text="accountBalance"/>
         </bttdojo:table>
       </td>
     </tr>

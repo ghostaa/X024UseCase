@@ -15,9 +15,9 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="accountList">
+    <widget name="Table" dataNameForList="accountList" id="table">
       <gridData/>
-      <column text="accountBalance" width="200" widget="TextBox" editable="true" dataName="accountBalance">
+      <column widget="TextBox" editable="true" dataName="accountBalance" width="200" text="accountBalance">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
     </widget>
@@ -36,7 +36,7 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Button" id="button" text="simpleMapButton" action="flowEvent=simpleMap">
+    <widget name="Button" action="flowEvent=simpleMap" id="button" text="simpleMapButton">
       <gridData/>
     </widget>
     <widget name="PlaceHolder">
@@ -54,7 +54,7 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Button" id="button01" text="resueMapButton" action="flowEvent=resueMap">
+    <widget name="Button" action="flowEvent=resueMap" id="button01" text="resueMapButton">
       <gridData/>
     </widget>
     <widget name="PlaceHolder">
@@ -63,7 +63,7 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Image" id="image" location="img/gm1.png">
+    <widget name="Image" location="img/gm1.png" id="image">
       <gridData/>
     </widget>
     <widget name="PlaceHolder">
@@ -99,7 +99,7 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Image" id="image01" location="img/gm11.png">
+    <widget name="Image" location="img/gm11.png" id="image01">
       <gridData/>
     </widget>
     <widget name="PlaceHolder">

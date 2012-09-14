@@ -14,36 +14,36 @@
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Table" id="table" dataNameForList="commonUserList">
+      <widget name="Table" dataNameForList="commonUserList" id="table">
         <gridData/>
-        <column text="commonFirstName" width="200" widget="TextBox" editable="true" dataName="commonfirstName">
+        <column widget="TextBox" editable="true" dataName="commonfirstName" width="200" text="commonFirstName">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
-        <column text="commonBirthDate" width="200" widget="TextBox" editable="true" dataName="commonBirthDate">
+        <column widget="TextBox" editable="true" dataName="commonBirthDate" width="200" text="commonBirthDate">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
       </widget>
       <widget name="Label" id="label01" text="topUserList">
         <gridData/>
       </widget>
-      <widget name="Table" id="table01" dataNameForList="topUserList">
+      <widget name="Table" dataNameForList="topUserList" id="table01">
         <gridData/>
-        <column text="topFirstName" width="200" widget="TextBox" editable="true" dataName="topfirstName">
+        <column widget="TextBox" editable="true" dataName="topfirstName" width="200" text="topFirstName">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
-        <column text="topBirthDate" width="200" widget="TextBox" editable="true" dataName="topBirthDate">
+        <column widget="TextBox" editable="true" dataName="topBirthDate" width="200" text="topBirthDate">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
       </widget>
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Button" id="button" text="Button" action="flowEvent=event0">
+      <widget name="Button" action="flowEvent=event0" id="button" text="Button">
         <gridData/>
       </widget>
       <gridLayout numColumns="1"/>
     </container>
-    <widget name="Image" id="image" location="img/cm3.png">
+    <widget name="Image" location="img/cm3.png" id="image">
       <gridData/>
     </widget>
     <widget name="PlaceHolder">

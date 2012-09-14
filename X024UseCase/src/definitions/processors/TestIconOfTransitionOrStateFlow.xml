@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestIconOfTransitionOrStateFlow>
 
-	<import file="mapflow\TestIconOfTransitionOrStateFlow.initial.start.in.xml"/>
 	<import file="mapflow\TestIconOfTransitionOrStateFlow.NotOk.in.xml"/>
 	<import file="mapflow\TestIconOfTransitionOrStateFlow.CM1Show.in.xml"/>
+	<import file="mapflow\TestIconOfTransitionOrStateFlow.initial.start.in.xml"/>
 
 	<htmlProcessor context="TestIconOfTransitionOrStateCtx" id="TestIconOfTransitionOrStateFlow">
 		<htmlState outputMapFmt="initial_OutputFmt" id="initial" type="initial">

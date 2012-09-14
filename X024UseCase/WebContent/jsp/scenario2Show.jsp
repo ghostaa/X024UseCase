@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from CM5_1Show.xui by ghost, on Fri Sep 14 18:23:57 CST 2012 -->
+<!-- Generated from scenario2Show.xui by ghost, on Fri Sep 14 18:24:03 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -59,48 +59,36 @@ dojo.addOnLoad(function(){
 </script>
 </head>
 <body class="claro" style="visibility:hidden">
-<bttdojo:form id="CM5_1Show_form" errorPage="CM5_1Show.jsp">
-  <table id="CM5_1Show_form">
+  <table id="scenario2Show_panel">
     <tr>
-      <td>
+      <td valign="top">
+        <bttdojo:form id="scenario2Show_form" errorPage="scenario2Show.jsp">
+          <table id="scenario2Show_form">
+            <tr>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <bttdojo:table id="scenario2Show_table" dataNameForList="commonUserList" isPageable="false">
+                  <bttdojo:column align="center" dataName="X024MF4IndexflowData" width="200" text="Index"/>
+                  <bttdojo:column align="center" dataName="commonfirstName" width="200" text="commonfirstName"/>
+                </bttdojo:table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+            </tr>
+          </table>
+        </bttdojo:form>
       </td>
     </tr>
     <tr>
       <td>
-        <bttdojo:label id="CM5_1Show_label" text="spainAccountList"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <bttdojo:table id="CM5_1Show_table" dataNameForList="spainAccountList" isPageable="false">
-          <bttdojo:column align="center" dataName="firstLastName" width="200" text="spainfirstlastName"/>
-          <bttdojo:column align="center" dataName="secondLastName" width="200" text="spainSecondlastName"/>
-        </bttdojo:table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <bttdojo:label id="CM5_1Show_label01" text="normalAccountList"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <bttdojo:table id="CM5_1Show_table01" dataNameForList="normalAccountList" isPageable="false">
-          <bttdojo:column align="center" dataName="firstLastName" width="200" text="normalfirstlastName"/>
-          <bttdojo:column align="center" dataName="secondLastName" width="200" text="normalSecondlastName"/>
-        </bttdojo:table>
       </td>
     </tr>
   </table>
-</bttdojo:form>
 
 </body>
 </html>

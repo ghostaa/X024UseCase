@@ -12,9 +12,9 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="sampleUserList">
+    <widget name="Table" dataNameForList="sampleUserList" id="table">
       <gridData/>
-      <column text="firstname" width="80" widget="" dataName="samplefirstName">
+      <column widget="" dataName="samplefirstName" width="80" text="firstname">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
     </widget>

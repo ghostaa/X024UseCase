@@ -8,18 +8,18 @@
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Table" id="table" dataNameForList="commonUserList">
+      <widget name="Table" dataNameForList="commonUserList" id="table">
         <gridData/>
-        <column text="Index" width="200" widget="" dataName="X024MF4IndexflowData">
+        <column widget="" dataName="X024MF4IndexflowData" width="200" text="Index">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
-        <column text="commonfirstName" width="200" widget="" dataName="commonfirstName">
+        <column widget="" dataName="commonfirstName" width="200" text="commonfirstName">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
       </widget>
       <gridLayout numColumns="1"/>
     </container>
-    <widget name="Image" id="image" location="img/mf4resue.png">
+    <widget name="Image" location="img/mf4resue.png" id="image">
       <gridData/>
     </widget>
     <gridLayout numColumns="1"/>

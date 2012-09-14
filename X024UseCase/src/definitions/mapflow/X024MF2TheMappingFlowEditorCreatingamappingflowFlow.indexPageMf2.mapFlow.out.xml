@@ -2,7 +2,7 @@
 <X024MF2TheMappingFlowEditorCreatingamappingflowFlow.indexPageMf2.mapFlow.out.mft.xml>
 	<fmtDef id="X024MF2TheMappingFlowEditorCreatingamappingflowFlow.indexPageMf2.mapFlow.out">
 		<mapperConverterExpression>
-			<mapIf id="condition" expression="dse_index &lt; 3">
+			<mapIf expression="dse_index &lt; 3" id="condition">
 				<map from="sampleUserList.*.X024MF2IndexflowData" to="commonUserList.*.X024MF2IndexflowData" append="false"/>
 				<map from="sampleUserList.*.samplefirstName" to="commonUserList.*.commonfirstName" append="ignore"/>
 			</mapIf>

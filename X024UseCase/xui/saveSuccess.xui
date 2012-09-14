@@ -11,7 +11,7 @@
       <widget name="Label" id="label01" text="userAccount:">
         <gridData/>
       </widget>
-      <widget name="Text" id="text" readOnly="true" dataName="userAccount">
+      <widget name="Text" readOnly="true" dataName="userAccount" id="text">
         <gridData/>
       </widget>
       <gridLayout numColumns="1"/>

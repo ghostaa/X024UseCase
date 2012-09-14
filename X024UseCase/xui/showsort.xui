@@ -3,13 +3,13 @@
   <styles/>
   <container name="Panel" id="panel">
     <gridData heightHint="133" verticalAlignment="1" widthHint="308"/>
-    <widget name="Table" id="table" dataNameForList="TestGlobalFunctionList">
+    <widget name="Table" dataNameForList="TestGlobalFunctionList" id="table">
       <gridData/>
-      <column text="column0" width="80" widget="" dataName="TestGlobalFunctionData">
+      <column widget="" dataName="TestGlobalFunctionData" width="80" text="column0">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
     </widget>
-    <widget name="Label" id="label" text="Label" dataName="TestGlobalFunctionData01">
+    <widget name="Label" dataName="TestGlobalFunctionData01" id="label" text="Label">
       <gridData/>
     </widget>
     <gridLayout numColumns="1"/>

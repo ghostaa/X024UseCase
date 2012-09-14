@@ -6,9 +6,9 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="VipList">
+    <widget name="Table" dataNameForList="VipList" id="table">
       <gridData/>
-      <column text="vipBalance" width="80" widget="" dataName="vipBalance">
+      <column widget="" dataName="vipBalance" width="80" text="vipBalance">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
     </widget>

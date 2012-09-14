@@ -14,25 +14,25 @@
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Table" id="table" dataNameForList="accountList">
+      <widget name="Table" dataNameForList="accountList" id="table">
         <gridData/>
-        <column text="accountfirstlastName" width="200" widget="TextBox" editable="true" dataName="accountfirstlastName">
+        <column widget="TextBox" editable="true" dataName="accountfirstlastName" width="200" text="accountfirstlastName">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
-        <column text="accountAge" width="200" widget="TextBox" editable="true" dataName="accountAge">
+        <column widget="TextBox" editable="true" dataName="accountAge" width="200" text="accountAge">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
-        <column text="accountBalance" width="200" widget="" dataName="accountBalance">
+        <column widget="" dataName="accountBalance" width="200" text="accountBalance">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
       </widget>
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Button" id="button" text="Button" action="flowEvent=event0">
+      <widget name="Button" action="flowEvent=event0" id="button" text="Button">
         <gridData/>
       </widget>
-      <widget name="Image" id="image" location="img/cm52.png">
+      <widget name="Image" location="img/cm52.png" id="image">
         <gridData/>
       </widget>
       <widget name="PlaceHolder">

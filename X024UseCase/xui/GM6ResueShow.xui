@@ -18,9 +18,9 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM6SameinstanceinbothsourceandtargetofmappingFlow','ctxName':'X024CM6SameinstanceinbothsourceandtargetofmappingCtx','dataName':'VipList'}">
+    <widget name="Table" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM6SameinstanceinbothsourceandtargetofmappingFlow','ctxName':'X024CM6SameinstanceinbothsourceandtargetofmappingCtx','dataName':'VipList'}" id="table">
       <gridData/>
-      <column text="vipBalance" width="200" widget="" dataName="vipBalance">
+      <column widget="" dataName="vipBalance" width="200" text="vipBalance">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
     </widget>

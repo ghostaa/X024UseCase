@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from GM6SimpleShow.xui by ghost, on Tue Sep 04 15:28:11 CST 2012 -->
+<!-- Generated from GM6SimpleShow.xui by ghost, on Fri Sep 14 18:23:58 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -66,7 +66,7 @@ dojo.addOnLoad(function(){
       </td>
       <td>
         <bttdojo:table id="GM6SimpleShow_table" dataNameForList="VipList" isPageable="false">
-          <bttdojo:column text="vipBalance" align="left" width="80" dataName="vipBalance"/>
+          <bttdojo:column align="left" dataName="vipBalance" width="80" text="vipBalance"/>
         </bttdojo:table>
       </td>
       <td>

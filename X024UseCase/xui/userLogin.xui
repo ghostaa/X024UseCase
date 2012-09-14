@@ -3,7 +3,7 @@
   <styles/>
   <container name="Panel" id="panel">
     <gridData heightHint="584" verticalAlignment="1" widthHint="430"/>
-    <container name="Form" id="form" defaultAction="flowEvent=login">
+    <container name="Form" defaultAction="flowEvent=login" id="form">
       <gridData heightHint="400" widthHint="400" autoSize="false"/>
       <widget name="Label" id="label" text="username:">
         <gridData/>
@@ -14,7 +14,7 @@
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Text" id="text" dataName="username">
+      <widget name="Text" dataName="username" id="text">
         <gridData/>
       </widget>
       <widget name="PlaceHolder">
@@ -32,7 +32,7 @@
       <widget name="PlaceHolder">
         <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
       </widget>
-      <widget name="Text" id="text01" dataName="password">
+      <widget name="Text" dataName="password" id="text01">
         <gridData/>
       </widget>
       <widget name="PlaceHolder">
@@ -43,16 +43,16 @@
       </widget>
       <container name="Panel" id="panel01">
         <gridData heightHint="33" verticalAlignment="1" widthHint="294"/>
-        <widget name="Button" id="button" text="submit" action="flowEvent=login">
+        <widget name="Button" action="flowEvent=login" id="button" text="submit">
           <gridData/>
         </widget>
-        <widget name="Button" id="button01" text="reset" buttonType="reset">
+        <widget name="Button" id="button01" buttonType="reset" text="reset">
           <gridData/>
         </widget>
-        <widget name="Button" id="button02" text="user A" buttonType="button" action="flowEvent=login">
+        <widget name="Button" action="flowEvent=login" id="button02" buttonType="button" text="user A">
           <gridData/>
         </widget>
-        <widget name="Button" id="button03" text="user B" buttonType="button">
+        <widget name="Button" id="button03" buttonType="button" text="user B">
           <gridData/>
         </widget>
         <gridLayout numColumns="4"/>

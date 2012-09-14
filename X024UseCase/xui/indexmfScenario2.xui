@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Cp1252"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="3,-12,437,210" dataBinding="{'ctxType':'proc','ctxFile':'mappingFlowScenario2','ctxName':'mappingFlowScenario2Ctx'}" isRuleDirty="false">
   <styles/>
   <container name="Panel" id="panel">

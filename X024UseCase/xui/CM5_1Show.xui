@@ -9,12 +9,12 @@
     <widget name="Label" id="label" text="spainAccountList">
       <gridData/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx','dataName':'spainAccountList'}">
+    <widget name="Table" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx','dataName':'spainAccountList'}" id="table">
       <gridData/>
-      <column text="spainfirstlastName" width="200" widget="" dataName="firstLastName">
+      <column widget="" dataName="firstLastName" width="200" text="spainfirstlastName">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
-      <column text="spainSecondlastName" width="200" widget="" dataName="secondLastName">
+      <column widget="" dataName="secondLastName" width="200" text="spainSecondlastName">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
     </widget>
@@ -27,12 +27,12 @@
     <widget name="Label" id="label01" text="normalAccountList">
       <gridData/>
     </widget>
-    <widget name="Table" id="table01" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx','dataName':'normalAccountList'}">
+    <widget name="Table" dataNameForList="{'ctxType':'proc','ctxFile':'X024CM5-1ConditionalMappingfoiCollsFlowFlow','ctxName':'X024CM5-1ConditionalMappingfoiCollsFlowCtx','dataName':'normalAccountList'}" id="table01">
       <gridData/>
-      <column text="normalfirstlastName" width="200" widget="" dataName="firstLastName">
+      <column widget="" dataName="firstLastName" width="200" text="normalfirstlastName">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
-      <column text="normalSecondlastName" width="200" widget="" dataName="secondLastName">
+      <column widget="" dataName="secondLastName" width="200" text="normalSecondlastName">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
     </widget>

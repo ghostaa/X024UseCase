@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TestIconOfTransitionOrStateFlow.CM1Show.in>
-
-
-	<htmlProcessor soruceContext="false" targetContext="false" id="TestIconOfTransitionOrStateFlow.CM1Show.in">
-		<htmlState id="initial" type="initial">
-			<transitions>
-				<htmlTransition id="initial.start" targetState="OK"/>
-			</transitions>
-		</htmlState>
-
-		<htmlState typeIdInfo="OK" id="OK" type="final"/>
-	</htmlProcessor>
-
-</TestIconOfTransitionOrStateFlow.CM1Show.in>
+<TestIconOfTransitionOrStateFlow.CM1Show.in.mft.xml>
+	<fmtDef id="TestIconOfTransitionOrStateFlow.CM1Show.in">
+		<mapperConverterExpression>
+		</mapperConverterExpression>
+	</fmtDef>
+</TestIconOfTransitionOrStateFlow.CM1Show.in.mft.xml>

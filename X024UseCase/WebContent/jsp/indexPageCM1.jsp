@@ -6,7 +6,7 @@
 	%>
 </jsp:useBean>	
 <html>
-<!-- Generated from indexPageCM1.xui by ghost, on Tue Sep 04 15:28:12 CST 2012 -->
+<!-- Generated from indexPageCM1.xui by ghost, on Fri Sep 14 18:23:59 CST 2012 -->
 <head>
 <%@ taglib uri="/WEB-INF/bttdojo.tld" prefix="bttdojo"%>
 <%@ page import="com.ibm.btt.cs.html.JSPUtil" %> 
@@ -80,8 +80,8 @@ dojo.addOnLoad(function(){
             <tr>
               <td>
                 <bttdojo:table id="indexPageCM1_table" dataNameForList="commonUserList" isPageable="false">
-                  <bttdojo:column text="commonfirstName" align="left" width="80" type="String" widget="TextBox" dataName="commonfirstName"/>
-                  <bttdojo:column text="commonlastName" align="left" width="80" dataName="commonlastName"/>
+                  <bttdojo:column widget="TextBox" align="left" dataName="commonfirstName" width="80" type="String" text="commonfirstName"/>
+                  <bttdojo:column align="left" dataName="commonlastName" width="80" text="commonlastName"/>
                 </bttdojo:table>
               </td>
             </tr>
@@ -93,8 +93,8 @@ dojo.addOnLoad(function(){
             <tr>
               <td>
                 <bttdojo:table id="indexPageCM1_table01" dataNameForList="topUserList" sortEnabled="true" isPageable="false">
-                  <bttdojo:column text="topfirstName" align="left" width="80" type="String" widget="TextBox" dataName="topfirstName"/>
-                  <bttdojo:column text="toplastName" align="left" width="80" dataName="toplastName"/>
+                  <bttdojo:column widget="TextBox" align="left" dataName="topfirstName" width="80" type="String" text="topfirstName"/>
+                  <bttdojo:column align="left" dataName="toplastName" width="80" text="toplastName"/>
                 </bttdojo:table>
               </td>
             </tr>

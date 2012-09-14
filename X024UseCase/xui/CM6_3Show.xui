@@ -18,9 +18,9 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="VipList">
+    <widget name="Table" dataNameForList="VipList" id="table">
       <gridData/>
-      <column text="accountBalance" width="80" widget="" dataName="accountBalance">
+      <column widget="" dataName="accountBalance" width="80" text="accountBalance">
         <tableColumnAlignment>16384</tableColumnAlignment>
       </column>
     </widget>
@@ -33,7 +33,7 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Image" id="image" location="img/cm63log.png">
+    <widget name="Image" location="img/cm63log.png" id="image">
       <gridData/>
     </widget>
     <gridLayout numColumns="2"/>

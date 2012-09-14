@@ -5,16 +5,16 @@
     <gridData heightHint="879" verticalAlignment="1" widthHint="992"/>
     <container name="Form" id="form">
       <gridData heightHint="177" verticalAlignment="1" widthHint="429"/>
-      <widget name="Table" id="table" dataNameForList="sampleUserList">
+      <widget name="Table" dataNameForList="sampleUserList" id="table">
         <gridData/>
-        <column text="Index" width="200" widget="" dataName="X024MF2IndexflowData">
+        <column widget="" dataName="X024MF2IndexflowData" width="200" text="Index">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
-        <column text="samplefirstName" width="200" widget="" dataName="samplefirstName">
+        <column widget="" dataName="samplefirstName" width="200" text="samplefirstName">
           <tableColumnAlignment>16777216</tableColumnAlignment>
         </column>
       </widget>
-      <widget name="Button" id="button" text="mapFlowButton" action="flowEvent=mapFlow">
+      <widget name="Button" action="flowEvent=mapFlow" id="button" text="mapFlowButton">
         <gridData/>
       </widget>
       <widget name="PlaceHolder">
@@ -28,7 +28,7 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Image" id="image" location="img/mf2.png">
+    <widget name="Image" location="img/mf2.png" id="image">
       <gridData/>
     </widget>
     <widget name="PlaceHolder">

@@ -9,12 +9,12 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="sampleUserList" hint="%nls.bttsample/Click_Link_Run_Flow">
+    <widget name="Table" dataNameForList="sampleUserList" hint="%nls.bttsample/Click_Link_Run_Flow" id="table">
       <gridData/>
-      <column text="samplefirstName" width="200" widget="" dataName="samplefirstName">
+      <column widget="" dataName="samplefirstName" width="200" text="samplefirstName">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
-      <column text="sampleBirthDate" width="200" widget="" dataName="sampleBirthDate">
+      <column widget="" dataName="sampleBirthDate" width="200" text="sampleBirthDate">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
     </widget>

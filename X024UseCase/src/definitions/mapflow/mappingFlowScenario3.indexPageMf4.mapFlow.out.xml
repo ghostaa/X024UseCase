@@ -3,8 +3,12 @@
 	<fmtDef id="mappingFlowScenario3.indexPageMf4.mapFlow.out">
 		<mapperConverterExpression>
 			<mapIf expression="userAmount &gt; 600" id="condition-1">
-				<map from="sampleUserList.*.samplefirstName" to="commonUserList.*.commonfirstName" append="false"/>
-				<map from="sampleUserList.*.X024MF4IndexflowData" to="commonUserList.*.X024MF4IndexflowData" append="ignore"/>
+				<mapIf expression="userAmount == 700" id="condition-2">
+					<map from="sampleUserList.*.samplefirstName" to="commonUserList.*.commonfirstName" append="false"/>
+					<map from="sampleUserList.*.X024MF4IndexflowData" to="commonUserList.*.X024MF4IndexflowData" append="ignore"/>
+				</mapIf>
+				<mapElse>
+				</mapElse>
 			</mapIf>
 			<mapElse>
 			</mapElse>

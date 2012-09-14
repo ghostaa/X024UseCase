@@ -8,10 +8,10 @@
       <widget name="Label" id="label" text="withdrawMoney:">
         <gridData/>
       </widget>
-      <widget name="Text" id="text" dataName="withdrawMoney">
+      <widget name="Text" dataName="withdrawMoney" id="text">
         <gridData/>
       </widget>
-      <widget name="Button" id="button" text="withdrawMoney" action="flowEvent=withdrawVali">
+      <widget name="Button" action="flowEvent=withdrawVali" id="button" text="withdrawMoney">
         <gridData/>
       </widget>
       <gridLayout numColumns="1"/>

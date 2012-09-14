@@ -21,15 +21,15 @@
     <widget name="PlaceHolder">
       <gridData heightHint="20" horizontalAlignment="4" verticalAlignment="4" widthHint="20"/>
     </widget>
-    <widget name="Table" id="table" dataNameForList="VipList">
+    <widget name="Table" dataNameForList="VipList" id="table">
       <gridData/>
-      <column text="accountfirstlastName" width="200" widget="TextBox" editable="true" dataName="accountfirstlastName">
+      <column widget="TextBox" editable="true" dataName="accountfirstlastName" width="200" text="accountfirstlastName">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
-      <column text="accountAge" width="200" widget="" dataName="accountAge">
+      <column widget="" dataName="accountAge" width="200" text="accountAge">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
-      <column text="accountBalance" width="200" widget="TextBox" editable="true" dataName="accountBalance">
+      <column widget="TextBox" editable="true" dataName="accountBalance" width="200" text="accountBalance">
         <tableColumnAlignment>16777216</tableColumnAlignment>
       </column>
     </widget>
